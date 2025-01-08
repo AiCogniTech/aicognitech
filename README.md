@@ -28,7 +28,8 @@ At AICognitech, we develop and share open-source projects, models, frameworks, a
 - **FAQ Handling:** Provide immediate, automated answers to common inquiries.
 
 Watch our demos to see the engagement bot in action:  
-[Demo Video 1](https://youtu.be/jwaUIyDg-U8) | [Demo Video 2 - Customer Support](https://www.youtube.com/watch?v=8K1z-5-74w8)
+[Demo Video 1](https://youtu.be/jwaUIyDg-U8) | 
+[Demo Video 2 - Customer Support](https://www.youtube.com/watch?v=8K1z-5-74w8)
 
 ### 3. Social Media Accelerator
 - **AI-Powered Multilingual Content:** Create standout posts in multiple languages.
