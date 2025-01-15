@@ -58,7 +58,7 @@ export default {
   			}
   		},
 		fontFamily: {
-			poppins: "var(--font-poppins)",
+			helvetica: "var(--font-helvetica)",
 			inter: "var(--font-inter)"
 		},
   		borderRadius: {
