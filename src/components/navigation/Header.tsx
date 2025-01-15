@@ -13,7 +13,7 @@ import MobileNav from './MobileNav';
 const Header = () => {
     const pathName = usePathname();
     return (
-        <header className="flex justify-between items-center my-5 md:my-8 mx-5 md:mx-10 lg:mx-16 py-4 pl-4 sm:pl-10 lg:pl-16 pr-4 rounded-3xl md:rounded-full bg-slate-600/40 border-text border-[0.6px]">
+        <header className="flex justify-between items-center my-5 md:my-8 mx-5 md:mx-10 lg:mx-16 py-4 pl-4 sm:pl-10 lg:pl-16 pr-4 rounded-3xl md:rounded-full bg-slate-600/40 border-text border-[0.6px] before:absolute before:h-full before:w-full before:top-0 before:left-0 before:z-[-1]">
             {/* Logo */}
             <Link href={"/"}>
                 <Image

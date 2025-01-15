@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils'
 const CtaButton = ({primary=true}: {primary?: boolean}) => {
     return (
         <Button className={cn('rounded-[50px] font-bold text-base font-helvetica text-center',
-            primary ? "bg-primary text-tertiary" : "bg-tertiary text-primary"
+            primary ? "bg-primary text-secondary" : "bg-secondary text-primary"
         )} size={"lg"}>
             Request Services
         </Button>

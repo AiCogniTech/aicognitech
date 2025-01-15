@@ -21,12 +21,12 @@ const MobileNav = () => {
     const pathname = usePathname();
     const router = useRouter();
     return (
-        <section className='lg:hidden'>
+        <section className='md:hidden'>
             <Sheet>
                 <SheetTrigger asChild>
                     <Menu height={36} width={36} className='cursor-pointer text-white' />
                 </SheetTrigger>
-                <SheetContent side={"right"} className='bg-secondary'>
+                <SheetContent side={"right"} className='bg-tertiary'>
                     {/* Adding SheetTitle for accessibility */}
                     <SheetTitle className="my-4">
                         <Link href={"/"} className='flex items-center gap-1'>
