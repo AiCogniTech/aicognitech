@@ -28,7 +28,7 @@ export default function MainRootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${inter.variable} antialiased`}
+        className={`${poppins.variable} ${inter.variable} antialiased text-primary bg-tertiary`}
       >
         {children}
       </body>
