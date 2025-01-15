@@ -91,3 +91,87 @@ nav a::after {
 nav a:hover::after {
   width: 100%; /* Expand underline to full width on hover */
 }
+
+@layer utilities {
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .text-30-extrabold {
+    @apply text-3xl font-extrabold text-black;
+  }
+
+  .text-30-bold {
+    @apply text-3xl font-bold text-black;
+  }
+
+  .text-30-semibold {
+    @apply font-semibold text-3xl text-black;
+  }
+
+  .text-26-semibold {
+    @apply font-semibold text-[26px] text-black;
+  }
+
+  .text-24-black {
+    @apply text-2xl font-black text-black;
+  }
+
+  .text-20-medium {
+    @apply font-medium text-xl text-black;
+    /* Removed !important */
+  }
+
+  .text-16-medium {
+    @apply font-medium text-base text-black;
+  }
+
+  .text-14-normal {
+    @apply font-normal text-sm text-black;
+  }
+
+  .header {
+    @apply flex-between px-6 sm:px-[2vw] py-5 sm:py-10 before:absolute before:h-full before:w-full before:top-0 before:left-0 before:z-[-1]
+  }
+
+  .hero-heading {
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold;
+  }
+
+  .bg-round-circle {
+    @apply h-[50vw] w-[70vw] blur-[20vw] bg-primary-rgba rounded-[50%] absolute top-[10vw] left-0
+  }
+
+  .sections_container {
+    @apply w-[90vw] mx-auto my-20 space-y-8
+  }
+
+  .section_heading {
+    @apply text-3xl lg:text-4xl xl:text-[40px] font-bold font-helvetica;
+  }
+  
+  .big-card-bg-service {
+    @apply bg-big-service-card bg-[50%] bg-no-repeat bg-contain
+  }
+
+  .card-bg-service {
+    @apply bg-service-card bg-[50%] bg-no-repeat bg-contain
+  }
+
+  .form_label{
+    @apply flex items-center gap-2 text-sm font-medium
+  }
+
+  .startup-form_input {
+    @apply border-2 border-black px-3 py-5 text-[18px] text-black font-semibold !important;
+  }
+
+  .startup-form_textarea {
+    @apply border border-black p-3 text-[15px] text-black font-medium  mt-3 !important;
+  }
+
+}

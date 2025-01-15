@@ -10,7 +10,7 @@ const Technology = () => {
             <div className='flex flex-col justify-center items-start gap-6 font-helvetica flex-1'>
                 <div className='space-y-4'>
                     <TechButton text='The Technology' />
-                    <h2 className='text-3xl lg:text-4xl xl:text-[40px] font-bold'>
+                    <h2 className='section_heading'>
                         AI & Wellness: Redefining the Path to Better Health
                     </h2>
                 </div>
