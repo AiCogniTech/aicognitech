@@ -13,7 +13,7 @@ const TransformationJourney = () => {
 
                 {/* Paragraph with text only */}
                 <p className='text-base md:text-lg lg:text-xl font-light'>
-                    At AiCogniTech, we’re redefining how work gets done, harnessing the power of AI to revolutionize productivity and unlock new possibilities. We go beyond the hype, custom-creating transformative AI solutions that elevate your team’s capabilities, streamline operations, and cut through inefficiencies. By aligning custom-built AI tools with your core business needs, we’re not just enhancing workflows—we’re reshaping the future of work itself, empowering your team to overcome every bottleneck, 25x their human capabilities, and achieve far greater impact. Here’s how we do it.
+                    Welcome to AiCogniTech, where we turn AI potential into measurable business results. Our expertise lies in developing bespoke AI solutions that adapt to your unique operational challenges. We distinguish ourselves by creating intuitive, powerful tools that amplify your team's natural capabilities, streamline complex processes, and eliminate persistent bottlenecks. Our approach isn't about replacing human insight - it's about augmenting it with AI that understands your specific business context, leading to exponential improvements in productivity & performance
                 </p>
             </div>
             {/* Transformation Journey Steps */}
