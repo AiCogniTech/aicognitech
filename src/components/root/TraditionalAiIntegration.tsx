@@ -9,7 +9,7 @@ const TraditionalAiIntegration = () => {
                     AI-Powered Market Acceleration for Health Innovation
                 </h2>
                 <p className='text-base md:text-lg lg:text-xl font-normal text-text-secodnary'>
-                    Why us?  We dive deep into your sector's unique challenges. Our specialized AI team works only with FemTech, AgeTech, HealthTech, and Longevity innovators
+                    {`Why us?  We dive deep into your sector's unique challenges. Our specialized AI team works only with FemTech, AgeTech, HealthTech, and Longevity innovators`}
                 </p>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>

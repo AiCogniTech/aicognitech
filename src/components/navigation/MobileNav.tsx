@@ -11,15 +11,13 @@ import {
 import { Menu } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
-import { Button } from '@/components/ui/button';
 import { navList } from '@/constant/constant';
 import CtaButton from '../shared/CtaButton';
 
 const MobileNav = () => {
     const pathname = usePathname();
-    const router = useRouter();
     return (
         <section className='md:hidden'>
             <Sheet>
