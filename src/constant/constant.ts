@@ -83,3 +83,25 @@ export const journeySteps = [
         icon: Four
     },
 ]
+
+export const aiIntegrations = [
+    {
+        title: "Accelerated Expert Solutions",
+        description: `Leverage our sector-specific frameworks as your foundation, enhanced with deep customization. Optimized to: 
+        •	Market positioning and audience segments 
+        •	Growth objectives and KPIs 
+        •	Competitive landscape and differentiators `
+    },
+    {
+        title: "Expert Leadership",
+        description: `Led by Cebuan de La Rochette, a multilingual AI strategist with deep expertise in health tech innovation across European  and Global markets.`
+    },
+    {
+        title: "Hands-On Support",
+        description: `From market analysis to AI implementation, we're with you at every stage. Our multi-language capability (EN, FR, DE, IT) ensures seamless scaling across European markets.`
+    },
+    {
+        title: "Proven Results",
+        description: `Track record of delivering 3x market reach for FemTech startups, 45% efficiency gains for AgeTech companies, and 40% growth in conversion rates for HealthTech innovators.`
+    },
+]

@@ -21,6 +21,7 @@
     "next": "15.1.4",
     "next-sanity": "^9.8.36",
     "react": "^19.0.0",
+    "react-calendly": "^4.3.1",
     "react-dom": "^19.0.0",
     "sanity": "^3.70.0",
     "styled-components": "^6.1.14",

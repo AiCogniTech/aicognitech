@@ -6,6 +6,7 @@ import Technology from "@/components/root/Technology";
 import TraditionalAi from "@/components/root/TraditionalAi";
 import TraditionalAiIntegration from "@/components/root/TraditionalAiIntegration";
 import TransformationJourney from "@/components/root/TransformationJourney";
+import TransformBusiness from "@/components/root/TransformBusiness";
 import WeServe from "@/components/root/WeServe";
 
 export default function Home() {
@@ -20,7 +21,7 @@ export default function Home() {
       <TraditionalAi />
       <TransformationJourney />
       <TraditionalAiIntegration />
-      AICognitech Website Frontend
+      <TransformBusiness />
     </main>
   );
 }
