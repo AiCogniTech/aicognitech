@@ -3,6 +3,9 @@ import BusinessTransform from "@/components/root/BusinessTransform";
 import Hero from "@/components/root/Hero";
 import OwnerOveriew from "@/components/root/OwnerOveriew";
 import Technology from "@/components/root/Technology";
+import TraditionalAi from "@/components/root/TraditionalAi";
+import TraditionalAiIntegration from "@/components/root/TraditionalAiIntegration";
+import TransformationJourney from "@/components/root/TransformationJourney";
 import WeServe from "@/components/root/WeServe";
 
 export default function Home() {
@@ -14,6 +17,9 @@ export default function Home() {
       <BusinessTransform />
       <Advantage />
       <WeServe />
+      <TraditionalAi />
+      <TransformationJourney />
+      <TraditionalAiIntegration />
       AICognitech Website Frontend
     </main>
   );

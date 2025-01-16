@@ -21,7 +21,7 @@ const Advantage = () => {
                         <h4 className='text-primary text-xl md:text-2xl font-bold'>
                             {advantage.title}
                         </h4>
-                        <p className='text-text-secodnary text-lg md:text-lg lg:text-2xl font-normal'>
+                        <p className='text-text-secodnary text-lg md:text-xl lg:text-2xl font-normal'>
                             {advantage.description}
                         </p>
                     </div>
