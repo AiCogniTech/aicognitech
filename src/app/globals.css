@@ -151,7 +151,7 @@ nav a:hover::after {
   }
 
   .section_heading {
-    @apply text-3xl lg:text-4xl xl:text-[40px] font-bold font-helvetica;
+    @apply text-2xl sm:text-3xl lg:text-4xl xl:text-[40px] font-bold font-helvetica;
   }
   
   .big-card-bg-service {

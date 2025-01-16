@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const OwnerOveriew = () => {
     return (
-        <section className='w-[90vw] mx-auto my-20 space-y-8'>
+        <section className='sections_container'>
             <div className='space-y-4 text-center'>
                 <TechButton text='The Technology' primary={false} />
                 <h2 className="section_heading">
