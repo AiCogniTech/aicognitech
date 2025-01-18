@@ -167,11 +167,11 @@ nav a:hover::after {
   }
 
   .startup-form_input {
-    @apply border-2 border-black px-3 py-5 text-[18px] text-black font-semibold !important;
+    @apply border-2 border-text-secodnary placeholder:text-text px-3 py-5 text-[18px] text-text font-semibold !important;
   }
 
   .startup-form_textarea {
-    @apply border border-black p-3 text-[15px] text-black font-medium  mt-3 !important;
+    @apply border border-text-secodnary placeholder:text-text p-3 text-[15px] text-text font-medium  mt-3 !important;
   }
 
 }

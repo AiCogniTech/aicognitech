@@ -46,7 +46,7 @@ const Footer = () => {
                 <div className='flex flex-col-reverse md:flex-row justify-between items-center gap-5'>
                     <div className="flex items-center gap-4 p-2 rounded-full border-text bg-slate-600/40">
                         <Link href={"https://www.facebook.com/brain.power.1272"}
-                            className='rounded-full bg-tertiary p-2'
+                            className='rounded-full group bg-tertiary p-2 hover:scale-[1.02] transition duration-500'
                         >
                             <Facebook
                                 width={30} height={30}
@@ -54,7 +54,7 @@ const Footer = () => {
                             />
                         </Link>
                         <Link href={"https://www.instagram.com/Aicognitech3000"}
-                            className='rounded-full bg-tertiary p-2'
+                            className='rounded-full bg-tertiary p-2 hover:scale-[1.02] transition duration-500'
                         >
                             <Instagram
                                 width={30} height={30}
@@ -62,7 +62,7 @@ const Footer = () => {
                             />
                         </Link>
                         <Link href={'https://www.linkedin.com/in/aicogntech-ai-powered-health-wellness-technology-solutions/'}
-                            className='rounded-full bg-tertiary p-2'
+                            className='rounded-full bg-tertiary p-2 hover:scale-[1.02] transition duration-500'
                         >
                             <Linkedin
                                 width={30} height={30}
@@ -70,7 +70,7 @@ const Footer = () => {
                             />
                         </Link>
                         <Link href={'https://x.com/@EarthHealthTech'}
-                            className='rounded-full bg-tertiary p-2'
+                            className='rounded-full bg-tertiary p-2 hover:scale-[1.02] transition duration-500'
                         >
                             <Twitter
                                 width={30} height={30}

@@ -105,3 +105,26 @@ export const aiIntegrations = [
         description: `Track record of delivering 3x market reach for FemTech startups, 45% efficiency gains for AgeTech companies, and 40% growth in conversion rates for HealthTech innovators.`
     },
 ]
+
+export const servicesItems = [
+    {
+      id: "virtual_receptionist",
+      label: "AI Virtual Receptionist",
+    },
+    {
+      id: "social_media_accelerator",
+      label: "Social Media Accelerator",
+    },
+    {
+      id: "calling_bot",
+      label: "Patient/Customer Engagement Calling Bot",
+    },
+    {
+      id: "custom_models_agents",
+      label: "Custom AI Models & Agents",
+    },
+    {
+      id: "automated_operations",
+      label: "Automated Operations",
+    },
+  ]

@@ -3,7 +3,7 @@ import React, { useTransition } from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '../ui/form'
+import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '../ui/form'
 import { Input } from '../ui/input'
 import { Building2, FileSpreadsheet, LoaderCircle, Mail, MapPin, MessageCircleMore, Phone, User } from 'lucide-react';
 import { Textarea } from '../ui/textarea';
@@ -11,6 +11,9 @@ import { Button } from '../ui/button';
 import { toast } from '@/hooks/use-toast';
 import { formSchema } from '@/lib/schema/form';
 import { formSubmit } from '@/lib/actions/form.actions';
+import { RadioGroup, RadioGroupItem } from '../ui/radio-group';
+import { Checkbox } from '../ui/checkbox';
+import { servicesItems } from '@/constant/constant';
 // import { cn } from '@/lib/utils';
 
 const ContactForm = () => {
@@ -24,53 +27,59 @@ const ContactForm = () => {
             companyName: "",
             JobTitle: "",
             workEmail: "",
-            projectBudget: 3000,
-            services: "",
+            projectBudget: "<$10k",
+            services: [],
             message: "",
-            agreed: undefined,
+            agreed: false,
         },
     });
 
     const onSubmit = async (values: z.infer<typeof formSchema>) => {
         startTransition(() => {
             formSubmit(values)
-            .then((data) => {
-                if (data?.error) {
+                .then((data) => {
+                    if (data?.error) {
+                        toast({
+                            title: "Failed Form",
+                            description: (data?.error) as string,
+                            variant: "destructive",
+                            duration: 2000,
+                        });
+                    }
+                    // if (data?.success) {
+                    //     toast({
+                    //         title: "Sended!",
+                    //         description: (data?.message) as string,
+                    //         duration: 2000,
+                    //     });
+                    // }
+                })
+                .catch((error) => {
                     toast({
-                        title: "Failed Form",
-                        description: (data?.error) as string,
+                        title: "Failed",
+                        description: error.message,
                         variant: "destructive",
                         duration: 2000,
                     });
-                }
-                // if (data?.success) {
-                //     toast({
-                //         title: "Sended!",
-                //         description: (data?.message) as string,
-                //         duration: 2000,
-                //     });
-                // }
-            })
-            .catch((error) => {
-                toast({
-                    title: "Failed",
-                    description: error.message,
-                    variant: "destructive",
-                    duration: 2000,
+                })
+                .finally(() => {
+                    form.reset();
                 });
-            })
-            .finally(() => {
-                form.reset();
-            });
         });
     }
 
 
     return (
-        <div className="h-auto flex flex-col justify-around items-center gap-8 border border-secondary">
-            <h4 className="text-2xl text-secondary font-bold">
-                Book a Free Consultation Call
-            </h4>
+        <div className="h-full flex flex-col justify-around items-center gap-8 p-8 border-2 border-tertiary rounded-xl bg-secondary text-white">
+            <div>
+                <h4 className="text-2xl text-primary font-bold">
+                    Let’s Grow Together
+                </h4>
+                <p>
+                    Join leading AI Agency growing their business with AiCogniTech,
+                    Book a 1:1 demo with us to get started.
+                </p>
+            </div>
             <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)}
                     className='grid grid-cols-1 md:grid-cols-2 gap-6 font-poppins'
@@ -167,7 +176,7 @@ const ContactForm = () => {
                         control={form.control}
                         name={"workEmail"}
                         render={({ field }) => (
-                            <FormItem className='col-span-2 md:col-span-1'>
+                            <FormItem className='col-span-2'>
                                 <FormControl>
                                     <Input
                                         id={'workEmail'}
@@ -191,17 +200,93 @@ const ContactForm = () => {
                         render={({ field }) => (
                             <FormItem className="col-span-2">
                                 <FormLabel htmlFor={'projectBudget'} className="form_label">
-                                    Project Budget: ${field.value}
+                                    Project Budget:*
                                 </FormLabel>
                                 <FormControl>
-                                    <Input
-                                        id={'projectBudget'}
-                                        onChange={(e) => {
-                                            field.onChange(e.target.value); // Set the first value from the array
-                                        }}
-                                        disabled={isPending}
-                                    />
+                                    <RadioGroup
+                                        onValueChange={field.onChange}
+                                        defaultValue={field.value}
+                                        className="flex flex-col space-y-1"
+                                    >
+                                        <FormItem className="flex items-center space-x-3 space-y-0">
+                                            <FormControl>
+                                                <RadioGroupItem value="<$10k" />
+                                            </FormControl>
+                                            <FormLabel className="font-normal">
+                                                {"<$10k"}
+                                            </FormLabel>
+                                        </FormItem>
+                                        <FormItem className="flex items-center space-x-3 space-y-0">
+                                            <FormControl>
+                                                <RadioGroupItem value="$10-50k" />
+                                            </FormControl>
+                                            <FormLabel className="font-normal">
+                                                {"$10-50k"}
+                                            </FormLabel>
+                                        </FormItem>
+                                        <FormItem className="flex items-center space-x-3 space-y-0">
+                                            <FormControl>
+                                                <RadioGroupItem value="$50k-100K" />
+                                            </FormControl>
+                                            <FormLabel className="font-normal">
+                                                {"$50k-100K"}
+                                            </FormLabel>
+                                        </FormItem>
+                                        <FormItem className="flex items-center space-x-3 space-y-0">
+                                            <FormControl>
+                                                <RadioGroupItem value="$100K+" />
+                                            </FormControl>
+                                            <FormLabel className="font-normal">
+                                                {"$100K+"}
+                                            </FormLabel>
+                                        </FormItem>
+                                    </RadioGroup>
                                 </FormControl>
+                                <FormMessage />
+                            </FormItem>
+                        )}
+                    />
+                    <FormField
+                        control={form.control}
+                        name={"services"}
+                        render={({ field }) => (
+                            <FormItem className="col-span-2">
+                                <FormLabel htmlFor={'services'} className="form_label">
+                                    What can we help with? Select all that apply*
+                                </FormLabel>
+                                {servicesItems.map((item) => (
+                                    <FormField
+                                        key={item.id}
+                                        control={form.control}
+                                        name="services"
+                                        render={({ field }) => {
+                                            return (
+                                                <FormItem
+                                                    key={item.id}
+                                                    className="flex flex-row items-start space-x-3 space-y-0"
+                                                >
+                                                    <FormControl>
+                                                        <Checkbox
+                                                            checked={field.value?.includes(item.id)}
+                                                            onCheckedChange={(checked) => {
+                                                                return checked
+                                                                    ? field.onChange([...field.value, item.id])
+                                                                    : field.onChange(
+                                                                        field.value?.filter(
+                                                                            (value) => value !== item.id
+                                                                        )
+                                                                    )
+                                                            }}
+                                                        />
+                                                    </FormControl>
+                                                    <FormLabel className="text-sm font-normal">
+                                                        {item.label}
+                                                    </FormLabel>
+                                                </FormItem>
+                                            )
+                                        }}
+                                    />
+                                ))}
                                 <FormMessage />
                             </FormItem>
                         )}
@@ -220,8 +305,9 @@ const ContactForm = () => {
                                     <Textarea
                                         id={'description'}
                                         {...field}
-                                        placeholder="Please provide us with your project brief before the meeting, so we can prepare and align the relevant team. If you have PDF document of your brief, we highly recommend uploading it using the field below."
+                                        placeholder="Please provide us with your project details (data type, volume, timeline, budget, etc)*"
                                         className={'startup-form_textarea'}
+                                        rows={5}
                                         onChange={(e) => {
                                             field.onChange(e.target.value);
                                         }}
@@ -232,10 +318,29 @@ const ContactForm = () => {
                             </FormItem>
                         )}
                     />
+                    <FormField
+                        control={form.control}
+                        name={"agreed"}
+                        render={({ field }) => (
+                            <FormItem className="flex flex-row items-center justify-center gap-3 shadow col-span-2">
+                                <FormControl>
+                                    <Checkbox
+                                        checked={field.value}
+                                        onCheckedChange={field.onChange}
+                                    />
+                                </FormControl>
+                                <FormLabel>
+                                    By checking this box you agree to receive promotional email communications from Scale AI. Your data will be processed in accordance with our Privacy Policy and Terms and Conditions. You may opt out of receiving promotional communications at any time.
+                                </FormLabel>
+
+                                <FormMessage />
+                            </FormItem>
+                        )}
+                    />
                     {/* Submit Button */}
                     <Button
                         type="submit"
-                        className="rounded-lg disabled:cursor-progress text-lg py-6 bg-secondary"
+                        className="rounded-lg disabled:cursor-progress text-lg py-6 text-secondary"
                         disabled={isPending}
                     >
                         {isPending ? <LoaderCircle className="animate-spin size-6" /> : 'Submit'}
