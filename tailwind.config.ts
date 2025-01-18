@@ -62,6 +62,9 @@ export default {
 			helvetica: "var(--font-helvetica)",
 			inter: "var(--font-inter)"
 		},
+		backgroundImage: {
+			'contact-hero': "url('/images/contact-hero.png')"
+		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',

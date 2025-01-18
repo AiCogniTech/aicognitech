@@ -79,13 +79,27 @@ const Footer = () => {
                         </Link>
                     </div>
 
-                    <div className='flex items-center gap-2'>
+                    <div className='flex items-center gap-3'>
                         <Image
                             src={"/images/HIPAA-Compliant-Logo.png"}
                             alt=""
-                            height={100}
-                            width={100}
+                            height={80}
+                            width={80}
                         />
+                        <Image
+                            src={"/images/GDPR_edited.jpg"}
+                            alt=""
+                            height={80}
+                            width={80}
+                        />
+
+                        <Image
+                            src={"/images/HIPAA-Compliant-Logo.png"}
+                            alt=""
+                            height={80}
+                            width={80}
+                        />
+
                     </div>
                 </div>
             </div>
