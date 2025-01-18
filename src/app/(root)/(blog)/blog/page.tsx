@@ -1,8 +1,11 @@
+import BlogHero from '@/components/Blog/BlogHero'
 import React from 'react'
 
 const BlogPage = () => {
     return (
-        <div>BlogPage</div>
+        <main>
+            <BlogHero />
+        </main>
     )
 }
 

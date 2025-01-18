@@ -46,13 +46,13 @@ const ContactForm = () => {
                             duration: 2000,
                         });
                     }
-                    // if (data?.success) {
-                    //     toast({
-                    //         title: "Sended!",
-                    //         description: (data?.message) as string,
-                    //         duration: 2000,
-                    //     });
-                    // }
+                    if (data?.success) {
+                        toast({
+                            title: "Submitted!!",
+                            description: (data?.message) as string,
+                            duration: 2000,
+                        });
+                    }
                 })
                 .catch((error) => {
                     toast({
