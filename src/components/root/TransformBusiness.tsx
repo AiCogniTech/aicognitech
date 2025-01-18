@@ -20,7 +20,7 @@ const TransformBusiness = ({ children }: { children?: ReactNode }) => {
                         The future of health belongs to early innovators. Whether you're looking to revolutionize personalized medicine, enhance aging-in-place solutions, or transform women's health technology, AICogniTech provides the cutting-edge AI expertise and support you need to lead in the AI digital health revolution. Schedule a consultation today and discover how we can help you leverage AI to pioneer the future of longevity and wellness.
                     </p>
                 </div>
-                <div className="flex justify-between items-center gap-10">
+                <div className="flex justify-between items-start gap-10">
                     {
                         children && (
                             <div className='flex-1'>
