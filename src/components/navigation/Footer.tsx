@@ -83,14 +83,14 @@ const Footer = () => {
                     <div className='flex items-center gap-3'>
                         <Image
                             src={"/images/HIPAA-Compliant-Logo.png"}
-                            alt=""
+                            alt="HIPPA"
                             height={80}
                             width={80}
                             className="w-20 h-20 md:w-full md:h-auto"
                         />
                         <Image
                             src={"/images/GDPR_edited.jpg"}
-                            alt=""
+                            alt="GDPR"
                             height={80}
                             width={80}
                             className="w-20 h-20 md:w-full md:h-auto"
@@ -98,7 +98,7 @@ const Footer = () => {
 
                         <Image
                             src={"/images/HIPAA-Compliant-Logo.png"}
-                            alt=""
+                            alt="Hippa"
                             height={80}
                             width={80}
                             className="w-20 h-20 md:w-full md:h-auto"
