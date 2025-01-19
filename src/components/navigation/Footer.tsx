@@ -4,7 +4,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import CtaButton from '../shared/CtaButton'
-import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react'
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
     return (
@@ -48,7 +49,7 @@ const Footer = () => {
                         <Link href={"https://www.facebook.com/brain.power.1272"}
                             className='rounded-full group bg-tertiary p-2 hover:scale-[1.02] transition duration-500'
                         >
-                            <Facebook
+                            <FaFacebook
                                 width={30} height={30}
                                 className="cursor-pointer"
                             />
@@ -56,7 +57,7 @@ const Footer = () => {
                         <Link href={"https://www.instagram.com/Aicognitech3000"}
                             className='rounded-full bg-tertiary p-2 hover:scale-[1.02] transition duration-500'
                         >
-                            <Instagram
+                            <FaInstagram
                                 width={30} height={30}
                                 className="cursor-pointer"
                             />
@@ -64,7 +65,7 @@ const Footer = () => {
                         <Link href={'https://www.linkedin.com/in/aicogntech-ai-powered-health-wellness-technology-solutions/'}
                             className='rounded-full bg-tertiary p-2 hover:scale-[1.02] transition duration-500'
                         >
-                            <Linkedin
+                            <FaLinkedin
                                 width={30} height={30}
                                 className="cursor-pointer"
                             />
@@ -72,7 +73,7 @@ const Footer = () => {
                         <Link href={'https://x.com/@EarthHealthTech'}
                             className='rounded-full bg-tertiary p-2 hover:scale-[1.02] transition duration-500'
                         >
-                            <Twitter
+                            <FaXTwitter
                                 width={30} height={30}
                                 className="cursor-pointer"
                             />
@@ -85,12 +86,14 @@ const Footer = () => {
                             alt=""
                             height={80}
                             width={80}
+                            className="w-20 h-20 md:w-full md:h-auto"
                         />
                         <Image
                             src={"/images/GDPR_edited.jpg"}
                             alt=""
                             height={80}
                             width={80}
+                            className="w-20 h-20 md:w-full md:h-auto"
                         />
 
                         <Image
@@ -98,6 +101,7 @@ const Footer = () => {
                             alt=""
                             height={80}
                             width={80}
+                            className="w-20 h-20 md:w-full md:h-auto"
                         />
 
                     </div>

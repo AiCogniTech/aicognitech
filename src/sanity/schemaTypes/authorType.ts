@@ -19,6 +19,11 @@ export const authorType = defineType({
       },
     }),
     defineField({
+      name: 'destination',
+      title: 'Destination',
+      type: 'string',
+    }),
+    defineField({
       name: 'image',
       type: 'image',
       options: {
@@ -36,6 +41,28 @@ export const authorType = defineType({
         }),
       ],
     }),
+    defineField({
+      name: "socials",
+      title: "Socials",
+      type: "array",
+      of: [
+        defineArrayMember({
+          type: "object",
+          fields: [
+            defineField({
+              name: "platform",
+              title: "Platform",
+              type: "string",
+            }),
+            defineField({
+              name: "url",
+              title: "URL",
+              type: "url",
+            }),
+          ],
+        }),
+      ],
+    })
   ],
   preview: {
     select: {

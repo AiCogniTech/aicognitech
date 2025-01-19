@@ -29,7 +29,7 @@ const SubscribeEmail = () => {
     }
     return (
         <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className='flex flex-col items-start md:flex-row md:items-center gap-3 w-full'>
+            <form onSubmit={form.handleSubmit(onSubmit)} className='flex flex-col items-start md:flex-row md:items-center gap-3'>
                 <FormField
                     control={form.control}
                     name={"email"}

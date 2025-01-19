@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react'
 import type { Metadata } from "next";
+import { BlogPostContextProvider } from '@/context/BlogContext';
 
 
 export const metadata: Metadata = {
@@ -11,7 +12,9 @@ export const metadata: Metadata = {
 const BlogLayout = ({ children }: { children: ReactNode }) => {
     return (
         <main>
-            {children}
+            <BlogPostContextProvider>
+                {children}
+            </BlogPostContextProvider>
         </main>
     )
 };
