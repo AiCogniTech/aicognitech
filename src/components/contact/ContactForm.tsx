@@ -3,9 +3,9 @@ import React, { useTransition } from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
-import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '../ui/form'
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '../ui/form'
 import { Input } from '../ui/input'
-import { Building2, FileSpreadsheet, LoaderCircle, Mail, MapPin, MessageCircleMore, Phone, User } from 'lucide-react';
+import { LoaderCircle, MessageCircleMore } from 'lucide-react';
 import { Textarea } from '../ui/textarea';
 import { Button } from '../ui/button';
 import { toast } from '@/hooks/use-toast';
@@ -249,7 +249,7 @@ const ContactForm = () => {
                     <FormField
                         control={form.control}
                         name={"services"}
-                        render={({ field }) => (
+                        render={() => (
                             <FormItem className="col-span-2">
                                 <FormLabel htmlFor={'services'} className="form_label">
                                     What can we help with? Select all that apply*

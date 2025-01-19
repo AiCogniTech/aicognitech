@@ -1,5 +1,5 @@
-import ContactForm from '@/components/contacts/ContactForm'
-import ContactHero from '@/components/contacts/ContactHero'
+import ContactForm from '@/components/contact/ContactForm'
+import ContactHero from '@/components/contact/ContactHero'
 import TransformBusiness from '@/components/root/TransformBusiness'
 import React from "react";
 
