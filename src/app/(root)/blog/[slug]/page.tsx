@@ -1,3 +1,5 @@
+import LatestBlogs from '@/components/Blog/LatestBlogs'
+import SpecificBlogDetails from '@/components/Blog/SpecificBlogDetails'
 import SpeicficBlogHero from '@/components/Blog/SpeicficBlogHero'
 import { fetchBlogDetails } from '@/lib/actions/blogs.actions'
 import React from 'react'
@@ -15,6 +17,8 @@ const SpecificBlogPage = async ({ params }: Iparams) => {
     return (
         <main>
             <SpeicficBlogHero blog={blogDetails} />
+            <SpecificBlogDetails blog={blogDetails} />
+            <LatestBlogs categorySlug={null} />
         </main>
     )
 }
