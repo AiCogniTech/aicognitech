@@ -39,7 +39,9 @@ const Footer = () => {
                                 })
                             }
                         </div>
-                        <CtaButton />
+                        <div className='hidden md:block'>
+                            <CtaButton />
+                        </div>
                     </div>
                 </div>
 
@@ -86,24 +88,15 @@ const Footer = () => {
                             alt="HIPPA"
                             height={80}
                             width={80}
-                            className="w-20 h-20 md:w-full md:h-auto"
+                            className="md:w-full md:h-auto"
                         />
                         <Image
                             src={"/images/GDPR_edited.jpg"}
                             alt="GDPR"
                             height={80}
                             width={80}
-                            className="w-20 h-20 md:w-full md:h-auto"
+                            className="md:w-full md:h-auto"
                         />
-
-                        <Image
-                            src={"/images/HIPAA-Compliant-Logo.png"}
-                            alt="Hippa"
-                            height={80}
-                            width={80}
-                            className="w-20 h-20 md:w-full md:h-auto"
-                        />
-
                     </div>
                 </div>
             </div>
