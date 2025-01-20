@@ -75,7 +75,7 @@ const AllBlogs = () => {
                     className="border-2 border-text rounded-xl overflow-hidden shadow-lg group transition-all duration-300 ease-in-out"
                 >
                     <div className="relative">
-                        {/* Image */}
+                        {/* Image */} 
                         <Image
                             src={post.imageSrc}
                             alt={post.title}
