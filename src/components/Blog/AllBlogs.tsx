@@ -1,14 +1,37 @@
 "use client";
-import { useBlogPostContext } from "@/context/BlogContext";
+// import { useBlogPostContext } from "@/context/BlogContext";
+import { fetchBlogs } from "@/lib/actions/blogs.actions";
 import { ArrowRight } from "lucide-react";
 import { PortableText } from "next-sanity";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-import React from "react";
+import { useRouter, useSearchParams } from "next/navigation";
+import React, { useEffect, useState } from "react";
 
 const AllBlogs = () => {
-    const { blogPosts } = useBlogPostContext();
+    const [blogPosts, setBlogPosts] = useState<Post[]>([]);
+
+    // Safely access searchParams inside a Suspense boundary
+    const categorySlug = useSearchParams()?.get("category");
+  
+    useEffect(() => {
+      const fetchBlogPosts = async () => {
+        try {
+  
+          const data: Post[] = await fetchBlogs({ categorySlug });
+  
+          if (data?.length) {
+            setBlogPosts(data);
+          } else {
+            setBlogPosts([]);
+          }
+        } catch (error) {
+          console.error("Error fetching blog posts:", error);
+        }
+      };
+  
+      fetchBlogPosts();
+    }, [categorySlug]); // Make sure this effect runs only once when the component mounts
 
     const router = useRouter();
 
@@ -74,7 +97,7 @@ const AllBlogs = () => {
                         </p>
                         {/* Categories */}
                         <div className="flex gap-2 mt-2">
-                            {post.categories.map((category, idx) => (
+                            {post.categories.map((category) => (
                                 <span
                                     key={category._id}
                                     className="text-sm md:text-base font-normal text-text-secodnary border border-text-secodnary rounded-full px-4 py-2 font-inter"
