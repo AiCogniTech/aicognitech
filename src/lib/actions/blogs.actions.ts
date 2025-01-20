@@ -40,3 +40,30 @@ export const fetchBlogs = async ({ categorySlug }: { categorySlug: string | null
             `, { categorySlug });
   return data
 }
+
+export const fetchBlogDetails = async (blogSlug: string) => {
+  const data = await client.fetch(`*[_type == "post" && slug.current == $slug][0]{
+      _id,
+      title,
+      "slug": slug.current,
+      publishedAt,
+      body,
+      author->{
+        _id,
+        name,
+        destination,
+        "socials": socials[]{platform, url},
+        bio,
+        "slug": slug.current,
+        "image_url": image.asset->url,
+      },
+      categories[]->{
+        title,
+        slug,
+        description,
+        _id
+      },
+      "imageSrc": mainImage.asset->url
+    }`, { slug: blogSlug });
+  return data
+}

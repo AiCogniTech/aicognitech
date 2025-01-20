@@ -1,3 +1,5 @@
+import SpeicficBlogHero from '@/components/Blog/SpeicficBlogHero'
+import { fetchBlogDetails } from '@/lib/actions/blogs.actions'
 import React from 'react'
 
 interface Iparams {
@@ -9,10 +11,11 @@ interface Iparams {
 
 const SpecificBlogPage = async ({ params }: Iparams) => {
     const blogSlug = (await (params)).slug
+    const blogDetails: Post = await fetchBlogDetails(blogSlug);
     return (
-        <div>
-            SpecificBlogPage : {blogSlug}
-        </div>
+        <main>
+            <SpeicficBlogHero blog={blogDetails} />
+        </main>
     )
 }
 
