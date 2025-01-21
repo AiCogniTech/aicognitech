@@ -11,7 +11,8 @@ const Technology = () => {
                 <div className='space-y-4'>
                     <TechButton text='The Technology' />
                     <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold font-helvetica'>
-                        Innovative AI Solutions for Health & Wellness: Redefining Industry Standards
+                        Innovative AI Solutions for Health & Wellness: <br /> 
+                        Redefining Industry Standards
                     </h2>
                 </div>
                 <div className='space-y-4'>
