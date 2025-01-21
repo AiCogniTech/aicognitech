@@ -73,11 +73,10 @@ const ContactForm = () => {
         <div className="h-full flex flex-col justify-around items-center gap-8 p-8 border-2 border-tertiary rounded-xl bg-secondary text-white">
             <div>
                 <h4 className="text-2xl text-primary font-bold">
-                    Let’s Grow Together
+                    Let's Build Together
                 </h4>
                 <p>
-                    Join leading AI Agency growing their business with AiCogniTech,
-                    Book a 1:1 demo with us to get started.
+                    Explore how AI can transform your business. Let us dive into a Discovery Call!
                 </p>
             </div>
             <Form {...form}>

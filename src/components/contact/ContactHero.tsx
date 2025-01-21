@@ -8,7 +8,8 @@ const ContactHero = () => {
             <div className="flex-center flex-col text-center gap-10 md:gap-5 relative bottom-10 z-10 w-[90vw] md:w-[70vw] xl:w-[55vw] font-helvetica text-tertiary">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
                     Partner & Grow: AI <br className="hidden lg:block" />
-                    for <span className="text-primary">Health & Wellness</span> <br className='hidden xl:block' />
+                    for <span className="text-primary">Health <span className='text-secondary'>& 
+                        </span> Wellness</span> <br className='hidden xl:block' />
                 </h1>
                 <p className='text-base md:text-lg lg:text-2xl font-bold'>
                     Harness AI to Boost Your Health & Wellness Business. Schedule Your Discovery Call Today!
