@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <main>
       {/* <div>
-      <h1>{t('welcome')}</h1>
+      <h1>{t('welcome')}</h1> 
       <p>{t('blog')}</p>
     </div> */}
       <Hero />
