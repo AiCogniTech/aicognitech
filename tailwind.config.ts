@@ -63,7 +63,7 @@ export default {
 			inter: "var(--font-inter)"
 		},
 		backgroundImage: {
-			'contact-hero': "url('/images/contact-hero.png')"
+			'contact-hero': "url('/images/contact-hero.jpg')"
 		},
   		borderRadius: {
   			lg: 'var(--radius)',
