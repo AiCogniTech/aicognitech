@@ -14,7 +14,7 @@ const ContactHero = () => {
                 <p className='text-base md:text-lg lg:text-2xl font-bold'>
                     Harness AI to Boost Your Health & Wellness Business. Schedule Your Discovery Call Today!
                 </p>
-                <CtaButton primary={false} />
+                <CtaButton />
             </div>
         </section>
     )
