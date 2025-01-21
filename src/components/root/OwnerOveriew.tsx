@@ -6,7 +6,6 @@ const OwnerOveriew = () => {
     return (
         <section className='sections_container'>
             <div className='space-y-4 text-center'>
-                <TechButton text='The Technology' primary={false} />
                 <h2 className="section_heading">
                     Elevating <span className='text-primary'>
                         Health Industries
@@ -25,12 +24,12 @@ const OwnerOveriew = () => {
                         Cebuan De La Rochette is on a mission to transform Health and Wellness through AI-driven marketing and sales. As the Founder & CEO of AICogniTech®, he collaborates with forward-thinking companies in FemTech, AgeTech, HealthTech, and Longevity to create solutions that truly enhance human well-being. Drawing on extensive expertise in AI architecture & multi-model prompt engineering, Cebuan guides leaders across the globe—helping them navigate today’s fast-paced AI landscape for real, measurable impact. With a background spanning European and international markets, he brings a multicultural perspective in English, French, German, and Italian. Ready to embrace AI without sacrificing a human touch? Cebuan is here to help you unlock unprecedented growth.
                     </p>
                 </div>
-                <div className='flex-1 hover:scale-[1.01] hover:shadow-md transition-all duration-700'>
+                <div className='flex-1 flex justify-center items-center hover:scale-[1.01] hover:shadow-md transition-all duration-700'>
                     <Image
                         src={"/images/cebuan.jpg"}
                         alt='Cebuan De La Rochette'
-                        height={500}
-                        width={500}
+                        height={350}
+                        width={350}
                         className='rounded-sm'
                     />
                 </div>
