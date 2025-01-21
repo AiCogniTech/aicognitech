@@ -329,7 +329,7 @@ const ContactForm = () => {
                                     />
                                 </FormControl>
                                 <FormLabel>
-                                    By checking this box you agree to receive promotional email communications from Scale AI. Your data will be processed in accordance with our Privacy Policy and Terms and Conditions. You may opt out of receiving promotional communications at any time.
+                                    By checking this box you agree to receive promotional email communications from AiCogniTech. Your data will be processed in accordance with our Privacy Policy and Terms and Conditions. You may opt out of receiving promotional communications at any time.
                                 </FormLabel>
 
                                 <FormMessage />
