@@ -62,7 +62,7 @@ const MobileNav = () => {
                                     );
                                 })}
                                 <SheetClose asChild>
-                                    <CtaButton />
+                                    <CtaButton text='/#contact' />
                                 </SheetClose>
                             </section>
                         </SheetClose>

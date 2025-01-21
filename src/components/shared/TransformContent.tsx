@@ -10,7 +10,7 @@ const TransformContent = () => {
                     <h4 className='text-lg md:text-xl lg:text-2xl font-bold'>
                         Elevate Your Brand with AI-Powered Content & Automation
                     </h4>
-                    <CtaButton />
+                    <CtaButton text='/contact-us' />
                 </div>
                 <div className='flex-1'>
                     <p className='text-base md:text-lg font-light'>
