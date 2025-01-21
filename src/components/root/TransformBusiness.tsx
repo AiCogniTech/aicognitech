@@ -12,7 +12,7 @@ const TransformBusiness = ({ children }: { children?: ReactNode }) => {
     return (
         <section className='bg-primary text-secondary font-helvetica' id='contact'>
             <div className='py-10 lg:py-20 w-[90vw] mx-auto space-y-8'>
-                <div className='space-y-4 text-center lg:w-[45vw] mx-auto'>
+                <div className='space-y-4 text-center lg:w-[40vw] mx-auto'>
                     <h2 className="section_heading">
                         Ready to Transform Healthcare & Wellness?
                     </h2>
