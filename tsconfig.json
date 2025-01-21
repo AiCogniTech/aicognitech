@@ -34,7 +34,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-, "src/context/BlogContext.tss"  ],
+, "src/context/BlogContext.tss", "i18n.js"  ],
   "exclude": [
     "node_modules"
   ]
