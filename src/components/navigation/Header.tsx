@@ -18,8 +18,8 @@ const Header = () => {
                 <Image
                     src={"/images/LOGO_Sharp.jpg"}
                     alt='Logo'
-                    height={80}
-                    width={100}
+                    height={110}
+                    width={130}
                     className='rounded-lg'
                 />
             </Link>
@@ -49,7 +49,7 @@ const Header = () => {
             {/* ReQuest Service Button & MultiLingual Selection */}
             <div className='flex items-center gap-4'>
                 <div className='hidden md:block'>
-                    <CtaButton />
+                    <CtaButton text='/#contact' />
                 </div>
                 <MultiLingualTool />
                 <MobileNav />
