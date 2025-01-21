@@ -1,3 +1,4 @@
+"use client";
 import Advantage from "@/components/root/Advantage";
 import BusinessTransform from "@/components/root/BusinessTransform";
 import Hero from "@/components/root/Hero";

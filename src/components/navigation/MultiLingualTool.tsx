@@ -1,3 +1,4 @@
+"use client";
 import React from 'react'
 import {
     Select,
@@ -12,45 +13,45 @@ import Sp from "@/../public/images/spain.png"
 import Fr from "@/../public/images/france.png"
 import It from "@/../public/images/italy.png"
 import Image from 'next/image'
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation';
 
 const MultiLingualTool = () => {
     const router = useRouter();
-    const { pathname, query, asPath, locale } = router;
-    const switchLanguage = (lang: string) => {
-        router.push({ pathname, query }, asPath, { locale: lang });
-      };
-
+    // const { pathname, query, asPath, locale } = router;
+    // const switchLanguage = (lang: string) => {
+    //     router.push({ pathname, query }, asPath, { locale: lang });
+    //   };
+    console.log(`Router: ${router}`)
     const data = [
         {
             title: "EN",
             value: "en",
             icon: UK,
-            onClick: () => switchLanguage('en')
+            // onClick: () => switchLanguage('en')
         },
         {
             title: "DE",
             value: "de",
             icon: Gr,
-            onClick: () => switchLanguage('de')
+            // onClick: () => switchLanguage('de')
         },
         {
             title: "ES",
             value: "es",
             icon: Sp,
-            onClick: () => switchLanguage('es')
+            // onClick: () => switchLanguage('es')
         },
         {
             title: "FR",
             value: "fr",
             icon: Fr,
-            onClick: () => switchLanguage('fr')
+            // onClick: () => switchLanguage('fr')
         },
         {
             title: "IT",
             value: "it",
             icon: It,
-            onClick: () => switchLanguage('it')
+            // onClick: () => switchLanguage('it')
         },
     ]
     return (
@@ -61,7 +62,7 @@ const MultiLingualTool = () => {
             <SelectContent className='bg-secondary text-text'>
                 {data.map((item, index) => (
                     <SelectItem key={index} value={item.value} className='focus:cursor-pointer'>
-                        <div className='flex items-center gap-2' onClick={item.onClick}>
+                        <div className='flex items-center gap-2'>
                             <Image src={item.icon} alt={item.title} height={20} width={20} />
                             <span className='font-helvetica font-normal hidden md:inline'>{item.title}</span>
                         </div>
