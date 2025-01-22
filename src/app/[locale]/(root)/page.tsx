@@ -9,18 +9,15 @@ import TraditionalAiIntegration from "@/components/root/TraditionalAiIntegration
 import TransformationJourney from "@/components/root/TransformationJourney";
 import TransformBusiness from "@/components/root/TransformBusiness";
 import WeServe from "@/components/root/WeServe";
-import useTranslation from 'next-translate/useTranslation';
+import { getTranslations } from "next-intl/server";
 
-export default function Home() {
-  // const { t } = useTranslation('common');
-  const t = useTranslation('common');
-  console.log(t)
+export default async function Home() {
+  const t = await getTranslations("HomePage");
   return (
     <main>
-      {/* <div>
-      <h1>{t('welcome')}</h1> 
-      <p>{t('blog')}</p>
-    </div> */}
+      <div>
+      <h1>{t('title')}</h1> 
+    </div>
       <Hero />
       <Technology />
       <OwnerOveriew />
