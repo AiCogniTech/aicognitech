@@ -11,7 +11,7 @@ const Footer = () => {
     return (
         <footer className='sections_container !my-10'>
             {/* Upper Section */}
-            <div className='flex flex-col justify-between gap-8 h-full md:h-[40vh]'>
+            <div className='flex flex-col justify-between gap-8 h-full md:h-[40vh] lg:w-[80vw] mx-auto'>
                 {/* Logo & Navigation & Links */}
                 <div className='flex flex-col md:flex-row justify-between gap-5 items-center'>
                     <Link href={"/"}>
@@ -39,7 +39,7 @@ const Footer = () => {
                                 })
                             }
                         </div>
-                        <div className='hidden md:block'>
+                        <div className='hidden md:flex md:justify-end'>
                             <CtaButton />
                         </div>
                     </div>
@@ -47,42 +47,50 @@ const Footer = () => {
 
                 {/*  Social Media Icons &other Images */}
                 <div className='flex flex-col-reverse md:flex-row justify-between items-center gap-5'>
-                    <div className="flex items-center gap-4 p-2 rounded-full border-text bg-slate-600/40">
-                        <Link href={"https://www.facebook.com/brain.power.1272"}
-                            className='rounded-full group bg-tertiary p-2 hover:scale-[1.02] transition duration-500'
-                        >
-                            <FaFacebook
-                                width={30} height={30}
-                                className="cursor-pointer"
-                            />
-                        </Link>
-                        <Link href={"https://www.instagram.com/Aicognitech3000"}
-                            className='rounded-full bg-tertiary p-2 hover:scale-[1.02] transition duration-500'
-                        >
-                            <FaInstagram
-                                width={30} height={30}
-                                className="cursor-pointer"
-                            />
-                        </Link>
-                        <Link href={'https://www.linkedin.com/in/aicogntech-ai-powered-health-wellness-technology-solutions/'}
-                            className='rounded-full bg-tertiary p-2 hover:scale-[1.02] transition duration-500'
-                        >
-                            <FaLinkedin
-                                width={30} height={30}
-                                className="cursor-pointer"
-                            />
-                        </Link>
-                        <Link href={'https://x.com/@EarthHealthTech'}
-                            className='rounded-full bg-tertiary p-2 hover:scale-[1.02] transition duration-500'
-                        >
-                            <FaXTwitter
-                                width={30} height={30}
-                                className="cursor-pointer"
-                            />
-                        </Link>
+                    <div className='space-y-4'>
+                        <h6 className='text-base font-bold'>
+                            Email: <Link href={"mailto:contact@AiCognitech.com"}
+                                className='hover:underline hover:text-primary duration-300'>
+                                contact@AiCognitech.com
+                            </Link>
+                        </h6>
+                        <div className="flex items-center gap-5 p-2 rounded-full border-text bg-slate-600/40">
+                            <Link href={"https://www.facebook.com/brain.power.1272"}
+                                className='rounded-full group bg-tertiary p-2 hover:scale-[1.02] transition duration-500'
+                            >
+                                <FaFacebook
+                                    size={30}
+                                    className="cursor-pointer"
+                                />
+                            </Link>
+                            <Link href={"https://www.instagram.com/Aicognitech3000"}
+                                className='rounded-full bg-tertiary p-2 hover:scale-[1.02] transition duration-500'
+                            >
+                                <FaInstagram
+                                    size={30}
+                                    className="cursor-pointer"
+                                />
+                            </Link>
+                            <Link href={'https://www.linkedin.com/in/aicogntech-ai-powered-health-wellness-technology-solutions/'}
+                                className='rounded-full bg-tertiary p-2 hover:scale-[1.02] transition duration-500'
+                            >
+                                <FaLinkedin
+                                    size={30}
+                                    className="cursor-pointer"
+                                />
+                            </Link>
+                            <Link href={'https://x.com/@EarthHealthTech'}
+                                className='rounded-full bg-tertiary p-2 hover:scale-[1.02] transition duration-500'
+                            >
+                                <FaXTwitter
+                                    size={30}
+                                    className="cursor-pointer"
+                                />
+                            </Link>
+                        </div>
                     </div>
 
-                    <div className='flex items-center gap-3'>
+                    <div className='flex items-center gap-5'>
                         <Image
                             src={"/images/HIPAA-Compliant-Logo.png"}
                             alt="HIPPA"
@@ -102,8 +110,17 @@ const Footer = () => {
             </div>
 
             {/* Lower Section */}
-            <div className='flex justify-center items-center'>
-                <p>
+            <div className='flex flex-col gap-5 justify-center items-center'>
+                <Link href={"/"}>
+                    <Image
+                        src={"/images/LOGO_Sharp.jpg"}
+                        alt='Logo'
+                        height={120}
+                        width={150}
+                        className='rounded-lg'
+                    />
+                </Link>
+                <p className='text-sm lg:text-base font-bold font-helvetica'>
                     © 2025 AiCogniTech. All rights reserved.
                 </p>
             </div>
