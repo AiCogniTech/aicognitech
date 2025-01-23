@@ -29,7 +29,7 @@ export default function Home() {
       <WeServe />
       <TraditionalAi />
       <TransformationJourney />
-      <TraditionalAiIntegration />
+      <TraditionalAiIntegration /> 
       <TransformBusiness />
     </main>
   );
