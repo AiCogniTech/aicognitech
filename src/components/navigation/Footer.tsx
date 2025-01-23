@@ -54,12 +54,12 @@ const Footer = () => {
                                 contact@AiCognitech.com
                             </Link>
                         </h6>
-                        <div className="flex items-center gap-5 p-2 rounded-full border-text bg-slate-600/40">
+                        <div className="flex items-center gap-6 py-2 px-3 rounded-full border-text bg-slate-600/40 w-full">
                             <Link href={"https://www.facebook.com/brain.power.1272"}
                                 className='rounded-full group bg-tertiary p-2 hover:scale-[1.02] transition duration-500'
                             >
                                 <FaFacebook
-                                    size={30}
+                                    size={22}
                                     className="cursor-pointer"
                                 />
                             </Link>
@@ -67,7 +67,7 @@ const Footer = () => {
                                 className='rounded-full bg-tertiary p-2 hover:scale-[1.02] transition duration-500'
                             >
                                 <FaInstagram
-                                    size={30}
+                                    size={22}
                                     className="cursor-pointer"
                                 />
                             </Link>
@@ -75,7 +75,7 @@ const Footer = () => {
                                 className='rounded-full bg-tertiary p-2 hover:scale-[1.02] transition duration-500'
                             >
                                 <FaLinkedin
-                                    size={30}
+                                    size={22}
                                     className="cursor-pointer"
                                 />
                             </Link>
@@ -83,7 +83,7 @@ const Footer = () => {
                                 className='rounded-full bg-tertiary p-2 hover:scale-[1.02] transition duration-500'
                             >
                                 <FaXTwitter
-                                    size={30}
+                                    size={22}
                                     className="cursor-pointer"
                                 />
                             </Link>
