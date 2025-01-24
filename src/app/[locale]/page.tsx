@@ -13,10 +13,11 @@ import { getTranslations } from "next-intl/server";
 
 export default async function Home() {
   const t = await getTranslations("HomePage");
+  console.log(t('welcome.title'))
   return (
     <main>
       <div>
-      <h1 className="text-text">{t('title')}</h1> 
+      <h1 className="text-text">{t('title')}</h1>
     </div>
       <Hero />
       <Technology />

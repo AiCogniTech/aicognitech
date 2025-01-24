@@ -3,7 +3,8 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import "./globals.css";
-import { Locale, routing } from "i18n/routing";
+import { Locale, routing } from "@/i18n/routing";
+import Header from "@/components/navigation/Header";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +18,7 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: { locale: Locale };
 }>) {
-  const { locale } = params;
+  const { locale } = await params;
   if (!routing.locales.includes(locale as Locale)) {
     notFound();
   }
@@ -30,7 +31,7 @@ export default async function RootLayout({
         className={`antialiased`}
       >
         <NextIntlClientProvider messages={messages}>
-          {/* <Navbar /> */}
+          <Header />
           {children}
         </NextIntlClientProvider>
       </body>

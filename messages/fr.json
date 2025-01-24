@@ -1,8 +1,144 @@
 {
-  "HomePage": {
-    "title": "Bonjour le monde!",
-    "welcome": {
-      "title": "Bienvenue sur la page d'accueil"
+  "Hero": {
+    "h1": "Innovation IA pour les secteurs FemTech, AgeTech, HealthTech, Bien-être et Longévité",
+    "h4": "Solution stratégique d'IA pour l'avenir de la santé et du bien-être"
+  },
+  "Technology": {
+    "h2_1": "Solutions IA innovantes pour la santé et le bien-être : ",
+    "h2_2": "Redéfinir les standards de l'industrie",
+    "p1": "Nous sommes spécialisés dans le conseil et l'intégration de l'IA sur mesure, en mettant l'accent sur",
+    "sp1": "FemTech, AgeTech et Longévité.",
+    "p2": "Notre approche consiste à nous immerger dans votre organisation pour identifier les processus fastidieux et répétitifs qui entravent l'efficacité, qu'il s'agisse du marketing, des ventes, de l'engagement des patients, des opérations, et bien plus encore. Nous développons ensuite des bots, agents et automatisations IA sur mesure en utilisant des LLMs de pointe (tels que ChatGPT, Claude, Gemini), des CustomGPTs et nos propres cadres innovants.",
+    "sp2": "Prêt à transformer la manière dont votre équipe fournit des soins et stimule la croissance ?"
+  },
+  "OwnerOverwie": {
+    "h2_1": "Élever",
+    "span": "les industries de la santé",
+    "h2_2": "avec une IA personnalisée",
+    "h4": "Cebuan De La Rochette",
+    "h6": "PDG & Fondatrice",
+    "p": "Cebuan De La Rochette a pour mission de transformer la santé et le bien-être grâce à l'IA appliquée au marketing et aux ventes. En tant que fondatrice et PDG d'AICogniTech®, elle collabore avec des entreprises visionnaires dans les secteurs FemTech, AgeTech, HealthTech et Longévité afin de créer des solutions qui améliorent véritablement le bien-être humain. Forte d'une expertise approfondie en architecture IA et en ingénierie de prompts multi-modèles, Cebuan accompagne les leaders du monde entier pour les aider à naviguer dans l'univers de l'IA et obtenir un impact concret et mesurable. Son expérience sur les marchés européens et internationaux lui confère une perspective multiculturelle en anglais, français, allemand et italien. Prêt à adopter l'IA sans perdre la touche humaine ? Cebuan est là pour vous aider à atteindre une croissance sans précédent."
+  },
+  "BusinessTransform": {
+    "h2": "Pourquoi choisir AiCogniTech ?",
+    "p": "Nos outils marketing alimentés par l'IA intègrent l'apprentissage automatique, l'analyse prédictive et le NLP pour proposer des campagnes personnalisées à l'échelle mondiale, dans n'importe quelle langue. De l'engagement client au retour sur investissement, nous veillons à ce que votre entreprise prospère dans un paysage concurrentiel de la santé et du bien-être.",
+    "listItems": {
+      "l1": "Expertise sectorielle spécifique",
+      "l2": "Portée internationale (EN, FR, DE, IT)",
+      "l3": "Approche consultative et personnalisée",
+      "l4": "Modèles de solutions éprouvées, stratégies sur mesure"
     }
+  },
+  "Advantages": {
+    "p1": "Les consommateurs dans le secteur",
+    "span": "de la santé et du bien-être",
+    "p2": "recherchent des expériences personnalisées.",
+    "p3": "Nous identifions vos points de douleur spécifiques et développons des solutions IA sur mesure pour éliminer, optimiser et automatiser tout, du marketing aux ventes et aux interactions client.",
+    "advantages": [
+      {
+        "title": "Ciblage inefficace de l'audience",
+        "description": "Des interactions de précision pilotées par l'IA connectent les marques axées sur la santé avec leurs clients idéaux grâce à des campagnes culturellement intuitives et multilingues.",
+        "icon": "ChartColumnIncreasing"
+      },
+      {
+        "title": "Manque de personnalisation",
+        "description": "Communiquez 24/7 avec des plans de bien-être personnalisés - des recommandations de produits ou de thérapies qui créent de véritables parcours clients uniques.",
+        "icon": "Sparkles"
+      },
+      {
+        "title": "Faible retour sur investissement",
+        "description": "Transformez vos dépenses en marketing IA en croissance tangible grâce à un ciblage et une analyse optimisés pour l'industrie de la santé et du bien-être.",
+        "icon": "Grip"
+      },
+      {
+        "title": "Faible fidélisation de la clientèle",
+        "description": "Fidélisez durablement vos patients et consommateurs grâce à un engagement intelligent et personnalisé en matière de santé et de bien-être.",
+        "icon": "ShieldCheck"
+      }
+    ]
+  },
+  "WeServe": {
+    "p1": "À qui nous nous adressons",
+    "p2": "Nous identifions vos points de douleur spécifiques et développons des solutions IA sur mesure pour éliminer, optimiser et automatiser tout, du marketing aux ventes et aux interactions client.",
+    "ServingIndustries": [
+      {
+        "title": "Innovateurs en HealthTech & FemTech",
+        "description": "Avec 71 % des consommateurs qui attendent des soins personnalisés, nous aidons les marques HealthTech et FemTech à exploiter l'IA pour anticiper les besoins, améliorer les expériences et rationaliser les opérations. Transformez des données de santé complexes en informations exploitables et prenez la tête du secteur du bien-être.",
+        "icon": "HeartPulse"
+      },
+      {
+        "title": "Leaders en Longévité & AgeTech",
+        "description": "Alors que la population de plus de 60 ans devrait doubler d'ici 2050, nous équipons les marques AgeTech et Longévité de solutions IA pour fournir des informations de santé personnalisées et des programmes de bien-être adaptés. Répondez à la demande croissante de solutions de maintien à domicile avec précision.",
+        "icon": "BicepsFlexed"
+      },
+      {
+        "title": "Entreprises mondiales de santé et bien-être",
+        "description": "Avec 80 % des consommateurs recherchant un bien-être holistique, nous aidons les entreprises à déployer l'IA pour améliorer l'efficacité, réduire les coûts et offrir des expériences culturellement adaptées. Développez votre marque à l'échelle mondiale grâce à des insights pilotés par l'IA et une conformité de haut niveau.",
+        "icon": "Hospital"
+      }
+    ]
+  },
+  "TraditionalAI": {
+    "h2": "Accélération du marché grâce à l'IA pour l'innovation en santé",
+    "p2": "Pourquoi nous ? Nous approfondissons les défis uniques de votre secteur. Notre équipe spécialisée en IA travaille exclusivement avec les innovateurs en FemTech, AgeTech, HealthTech et Longévité.",
+    "ul": [
+      "Marketing personnalisé à grande échelle",
+      "Éducation et communication sur des produits complexes",
+      "Qualification des prospects et optimisation du cycle de vente",
+      "Intelligence de marché et positionnement concurrentiel"
+    ]
+  },
+  "TransforamtionJourney": {
+    "h2": "Votre parcours personnalisé de transformation par l'IA",
+    "p1": "Bienvenue chez AiCogniTech, où nous transformons le potentiel de l'IA en résultats commerciaux mesurables. Notre expertise réside dans le développement de solutions IA sur mesure adaptées aux défis opérationnels uniques. Nous nous démarquons en créant des outils intuitifs et puissants qui amplifient les capacités naturelles de votre équipe, simplifient les processus complexes et éliminent les obstacles persistants. Notre approche ne vise pas à remplacer l'intelligence humaine, mais à l'augmenter avec une IA qui comprend votre contexte métier spécifique, entraînant des améliorations exponentielles de la productivité et des performances.",
+    "journeySteps": [
+      {
+        "title": "Votre transformation IA spécifique au secteur",
+        "description": "AICogniTech propose des solutions spécialisées en marketing et vente IA pour les secteurs FemTech, AgeTech, HealthTech et Longévité. Nous adoptons une approche axée sur les données pour révolutionner votre connexion avec votre public cible et développer votre présence sur le marché.",
+        "icon": "One"
+      },
+      {
+        "title": "Conception stratégique de l'IA",
+        "description": "Obtenez des solutions IA adaptées à votre secteur qui amplifient votre impact sur le marché. Les startups FemTech voient une pénétration du marché 60 % plus rapide. Les entreprises AgeTech atteignent des taux d'engagement 45 % plus élevés. Les entreprises HealthTech réduisent les coûts d'acquisition de clients de 40 %. Les marques de longévité triplent leur portée sur le marché.",
+        "icon": "Two"
+      },
+      {
+        "title": "Mise en œuvre alimentée par l'IA",
+        "description": "Déployez des outils d'IA personnalisés pour le marketing, les ventes et l'automatisation, adaptés aux spécificités de votre secteur. La génération automatisée de contenu, le ciblage précis des audiences et l'optimisation des campagnes multilingues (EN, FR, DE, IT) garantissent un impact maximal sur tous vos marchés.",
+        "icon": "Three"
+      },
+      {
+        "title": "Transformation du marché",
+        "description": "Obtenez des résultats concrets et révolutionnaires dans votre secteur. Les entreprises réalisent une création de contenu 50 % plus rapide, une augmentation de 65 % des prospects qualifiés et des taux de conversion 40 % plus élevés. Vos innovations atteignent votre audience cible avec précision et à grande échelle.",
+        "icon": "Four"
+      }
+    ]
+  },
+  "TraditionalAiIntegration": {
+    "h2": "Accélération du marché grâce à l'IA pour l'innovation en santé",
+    "p1": "Pourquoi nous ? Nous approfondissons les défis uniques de votre secteur. Notre équipe spécialisée en IA travaille exclusivement avec les innovateurs en FemTech, AgeTech, HealthTech et Longévité.",
+    "aiIntegrations": [
+      {
+        "title": "Solutions expertes accélérées",
+        "description": "Exploitez nos cadres spécifiques au secteur comme base, enrichis d'une personnalisation approfondie. Optimisés pour : \n• Positionnement de marché et segmentation d'audience \n• Objectifs de croissance et indicateurs clés de performance \n• Paysage concurrentiel et éléments différenciateurs"
+      },
+      {
+        "title": "Leadership d'expert",
+        "description": "Dirigé par Cebuan de La Rochette, une stratège IA multilingue dotée d'une expertise approfondie en innovation HealthTech sur les marchés européens et mondiaux."
+      },
+      {
+        "title": "Support pratique",
+        "description": "De l'analyse de marché à la mise en œuvre de l'IA, nous vous accompagnons à chaque étape. Notre capacité multilingue (EN, FR, DE, IT) assure une expansion fluide sur les marchés européens."
+      },
+      {
+        "title": "Résultats prouvés",
+        "description": "Un historique de succès avec une portée de marché triplée pour les startups FemTech, une augmentation de 45 % de l'efficacité pour les entreprises AgeTech, et une croissance de 40 % des taux de conversion pour les innovateurs HealthTech."
+      }
+    ]
+  },
+  "TransformBusiness": {
+    "h2": "Prêt à transformer la santé et le bien-être ?",
+    "p1": "L'avenir de la santé appartient aux premiers innovateurs. Que vous cherchiez à révolutionner la médecine personnalisée, à améliorer les solutions de maintien à domicile ou à transformer la technologie de la santé des femmes, AICogniTech vous apporte l'expertise IA de pointe et le soutien nécessaire pour diriger la révolution numérique de la santé.",
+    "sp1": "Planifiez une consultation dès aujourd'hui et découvrez comment nous pouvons vous aider à exploiter l'IA pour façonner l'avenir de la longévité et du bien-être."
   }
 }

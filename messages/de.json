@@ -4,5 +4,147 @@
     "welcome": {
       "title": "Willkommen auf der Startseite"
     }
+  },
+  "Hero": {
+    "h1": "KI-Innovation für FemTech, AgeTech, HealthTech, Wellness & Langlebigkeitssektoren",
+    "h4": "Strategische KI-Lösungen für die Zukunft von Gesundheit & Wohlbefinden"
+  },
+  "Technology": {
+    "h2_1": "Innovative KI-Lösungen für Gesundheit & Wellness: ",
+    "h2_2": "Neudefinition von Industriestandards",
+    "p1": "Wir spezialisieren uns auf maßgeschneiderte KI-Beratung und Integrationsdienste mit Fokus auf",
+    "sp1": "FemTech, AgeTech und Langlebigkeit.",
+    "p2": "Unser Ansatz beinhaltet, uns in Ihre Organisation zu vertiefen, um mühsame, repetitive Prozesse zu identifizieren, die die Effizienz beeinträchtigen – von Marketing und Vertrieb bis hin zu Patientenbindung, Betrieb und mehr. Anschließend entwickeln wir maßgeschneiderte KI-Bots, -Agenten und -Automatisierungen unter Verwendung führender LLMs (wie ChatGPT, Claude, Gemini), CustomGPTs und unserer eigenen innovativen Frameworks.",
+    "sp2": "Bereit, die Art und Weise zu transformieren, wie Ihr Team Pflege leistet und Wachstum vorantreibt?"
+  },
+  "OwnerOverwie": {
+    "h2_1": "Steigerung",
+    "span": "der Gesundheitsindustrien",
+    "h2_2": "mit personalisierter KI",
+    "h4": "Cebuan De La Rochette",
+    "h6": "CEO & Gründerin",
+    "p": "Cebuan De La Rochette hat es sich zur Aufgabe gemacht, Gesundheit und Wohlbefinden durch KI-gesteuertes Marketing und Vertrieb zu transformieren. Als Gründerin & CEO von AICogniTech® arbeitet sie mit zukunftsorientierten Unternehmen in den Bereichen FemTech, AgeTech, HealthTech und Langlebigkeit zusammen, um Lösungen zu schaffen, die das menschliche Wohlbefinden wirklich verbessern. Mit umfangreicher Expertise in KI-Architektur & multimodaler Prompt-Engineering leitet Cebuan Führungskräfte auf der ganzen Welt an und hilft ihnen, sich im heutigen schnelllebigen KI-Landschaft zurechtzufinden und reale, messbare Auswirkungen zu erzielen. Mit einem Hintergrund, der europäische und internationale Märkte umfasst, bringt sie eine multikulturelle Perspektive in Englisch, Französisch, Deutsch und Italienisch mit. Bereit, KI zu nutzen, ohne den menschlichen Aspekt zu opfern? Cebuan ist hier, um Ihnen zu helfen, beispielloses Wachstum freizuschalten."
+  },
+  "BusinessTransform": {
+    "h2": "Warum AiCogniTech wählen?",
+    "p": "Unsere KI-gestützten Marketing-Tools integrieren maschinelles Lernen, prädiktive Analysen und NLP, um personalisierte Kampagnen weltweit in jeder Sprache bereitzustellen. Von der Steigerung des Engagements bis zur Steigerung des ROI stellen wir sicher, dass Ihr Unternehmen in der wettbewerbsintensiven Gesundheits- und Wellnesslandschaft gedeiht.",
+    "listItems": {
+      "l1": "Branchenspezifische Expertise",
+      "l2": "Internationale Marktreichweite (EN, FR, DE, IT)",
+      "l3": "Beratungsansatz + persönliche Aufmerksamkeit",
+      "l4": "Bewährte Lösungsvorlagen, maßgeschneiderte Bündelstrategien"
+    }
+  },
+  "Advantages": {
+    "p1": "Verbraucher in",
+    "span": "Gesundheits- & Wellnesssektoren",
+    "p2": "suchen nach personalisierten Erlebnissen.",
+    "p3": "Wir identifizieren Ihre spezifischen Schmerzpunkte und entwickeln maßgeschneiderte KI-Lösungen, um alles von Marketing bis Vertrieb und Kundeninteraktionen zu eliminieren, zu optimieren und zu automatisieren.",
+    "advantages": [
+      {
+        "title": "Ineffektives Zielgruppen-Targeting",
+        "description": "KI-gestützte präzise Interaktionen verbinden gesundheitsorientierte Marken mit idealen Kunden durch kulturell intuitive & mehrsprachige Kampagnen.",
+        "icon": "ChartColumnIncreasing"
+      },
+      {
+        "title": "Mangel an Personalisierung",
+        "description": "Kommunizieren Sie rund um die Uhr mit personalisierten Wellness-Plänen – Produkt- oder Therapieempfehlungen, die wirklich einzigartige Kundenreisen aufbauen.",
+        "icon": "Sparkles"
+      },
+      {
+        "title": "Schwacher ROI",
+        "description": "Verwandeln Sie Ihre KI-Marketingausgaben in greifbares Wachstum mit KI-optimiertem Targeting und Analysen, die für die Gesundheits- & Wellnessbranche entwickelt wurden.",
+        "icon": "Grip"
+      },
+      {
+        "title": "Geringe Kundenbindung",
+        "description": "Fördern Sie dauerhafte Patienten- und Kundenbeziehungen mit intelligenter, personalisierter Gesundheits- und Wellnessbindung.",
+        "icon": "ShieldCheck"
+      }
+    ]
+  },
+  "WeServe": {
+    "p1": "Wen wir bedienen",
+    "p2": "Wir identifizieren Ihre spezifischen Schmerzpunkte und entwickeln maßgeschneiderte KI-Lösungen, um alles von Marketing bis Vertrieb und Kundeninteraktionen zu eliminieren, zu optimieren und zu automatisieren.",
+    "ServingIndustries": [
+      {
+        "title": "HealthTech- & FemTech-Innovatoren",
+        "description": "Da 71% der Verbraucher personalisierte Pflege erwarten, helfen wir HealthTech- und FemTech-Marken, KI zu nutzen, um Bedürfnisse vorherzusagen, Erfahrungen zu verbessern und Abläufe zu optimieren. Verwandeln Sie komplexe Gesundheitsdaten in umsetzbare Erkenntnisse und führen Sie die Zukunft des Wohlbefindens an.",
+        "icon": "HeartPulse"
+      },
+      {
+        "title": "Führende Unternehmen in den Bereichen Langlebigkeit & AgeTech",
+        "description": "Da sich die Bevölkerung über 60 bis 2050 verdoppelt, statten wir AgeTech- und Langlebigkeitsmarken mit KI-Lösungen aus, um personalisierte Gesundheitseinblicke & Wellnessprogramme bereitzustellen. Erfüllen Sie die wachsende Nachfrage nach Lösungen für das Altern vor Ort mit Präzision.",
+        "icon": "BicepsFlexed"
+      },
+      {
+        "title": "Globale Gesundheits- & Wellnessunternehmen",
+        "description": "Da 80% der Verbraucher ganzheitliches Wohlbefinden suchen, helfen wir Unternehmen, KI einzusetzen, um Effizienz zu steigern, Kosten zu senken und kulturell adaptive Erfahrungen zu liefern. Skalieren Sie Ihre Marke global mit KI-gesteuerten Erkenntnissen und erstklassiger Compliance.",
+        "icon": "Hospital"
+      }
+    ]
+  },
+  "TraditionalAI": {
+    "h2": "KI-gestützte Marktbeschleunigung für Gesundheitsinnovationen",
+    "p2": "Warum wir? Wir tauchen tief in die einzigartigen Herausforderungen Ihrer Branche ein. Unser spezialisiertes KI-Team arbeitet ausschließlich mit Innovatoren aus den Bereichen FemTech, AgeTech, HealthTech und Langlebigkeit.",
+    "ul": [
+      "Personalisierte Vermarktung im großen Maßstab",
+      "Komplexe Produktbildung & Kommunikation",
+      "Lead-Qualifizierung & Optimierung des Verkaufszyklus",
+      "Marktanalyse & Wettbewerbspositionierung"
+    ]
+  },
+  "TransforamtionJourney": {
+    "h2": "Ihre maßgeschneiderte KI-Transformationsreise",
+    "p1": "Willkommen bei AiCogniTech, wo wir das Potenzial von KI in messbare Geschäftsergebnisse umwandeln. Unsere Expertise liegt in der Entwicklung maßgeschneiderter KI-Lösungen, die sich an Ihre einzigartigen betrieblichen Herausforderungen anpassen. Wir zeichnen uns dadurch aus, dass wir intuitive, leistungsstarke Tools schaffen, die die natürlichen Fähigkeiten Ihres Teams erweitern, komplexe Prozesse optimieren und hartnäckige Engpässe beseitigen. Unser Ansatz besteht nicht darin, menschliche Erkenntnisse zu ersetzen, sondern sie durch KI zu ergänzen, die Ihre spezifischen Geschäftsanforderungen versteht und exponentielle Verbesserungen in Produktivität und Leistung ermöglicht.",
+    "journeySteps": [
+      {
+        "title": "Ihre branchenspezifische KI-Transformation",
+        "description": "AICogniTech bietet spezialisierte KI-Marketing- und Vertriebslösungen für die Bereiche FemTech, AgeTech, HealthTech und Langlebigkeit. Unser datengesteuerter Ansatz revolutioniert, wie Sie mit Ihrer Zielgruppe interagieren und Ihre Marktpräsenz ausbauen.",
+        "icon": "Eins"
+      },
+      {
+        "title": "Strategisches KI-Design",
+        "description": "Erhalten Sie branchenspezifische KI-Lösungen, die Ihre Marktwirkung verstärken. FemTech-Startups erreichen 60 % schnellere Marktdurchdringung. AgeTech-Unternehmen erzielen 45 % höhere Engagement-Raten. HealthTech-Firmen senken die Kundenakquisitionskosten um 40 %. Langlebigkeitsmarken erweitern ihre Marktreichweite um das Dreifache.",
+        "icon": "Zwei"
+      },
+      {
+        "title": "KI-gestützte Implementierung",
+        "description": "Implementieren Sie maßgeschneiderte KI-Tools für Marketing, Vertrieb und Automatisierung, die Ihre einzigartige Zielgruppe ansprechen. Automatisierte Inhaltsgenerierung, präzises Zielgruppen-Targeting und mehrsprachige Kampagnenoptimierung (EN, FR, DE, IT) sorgen für maximale Wirkung auf allen Ihren Märkten.",
+        "icon": "Drei"
+      },
+      {
+        "title": "Markttransformation",
+        "description": "Erleben Sie greifbare Durchbruchsergebnisse in Ihrer Branche. Unternehmen erreichen 50 % schnellere Inhaltserstellung, 65 % mehr qualifizierte Leads und 40 % höhere Konversionsraten. Ihre Innovationen erreichen mit Präzision und Skalierbarkeit die richtige Zielgruppe.",
+        "icon": "Vier"
+      }
+    ]
+  },
+  "TraditionalAiIntegration": {
+    "h2": "KI-gestützte Marktbeschleunigung für Gesundheitsinnovationen",
+    "p1": "Warum wir? Wir tauchen tief in die einzigartigen Herausforderungen Ihrer Branche ein. Unser spezialisiertes KI-Team arbeitet ausschließlich mit Innovatoren aus den Bereichen FemTech, AgeTech, HealthTech und Langlebigkeit.",
+    "aiIntegrations": [
+      {
+        "title": "Beschleunigte Expertenlösungen",
+        "description": "Nutzen Sie unsere branchenspezifischen Frameworks als Grundlage, erweitert durch maßgeschneiderte Anpassungen. Optimiert für: \n• Marktpositionierung und Zielgruppen \n• Wachstumsziele und KPIs \n• Wettbewerbslandschaft und Alleinstellungsmerkmale"
+      },
+      {
+        "title": "Führende Expertise",
+        "description": "Geleitet von Cebuan de La Rochette, einer mehrsprachigen KI-Strategin mit umfassender Erfahrung in Gesundheitstechnologie-Innovationen auf europäischen und globalen Märkten."
+      },
+      {
+        "title": "Praktische Unterstützung",
+        "description": "Von der Marktanalyse bis zur KI-Implementierung begleiten wir Sie in jeder Phase. Unsere mehrsprachigen Fähigkeiten (EN, FR, DE, IT) ermöglichen eine nahtlose Skalierung über die europäischen Märkte hinweg."
+      },
+      {
+        "title": "Bewährte Ergebnisse",
+        "description": "Erfolgsbilanz: 3x größere Marktreichweite für FemTech-Startups, 45 % Effizienzsteigerung für AgeTech-Unternehmen und 40 % Wachstum der Konversionsraten für HealthTech-Innovatoren."
+      }
+    ]
+  },
+  "TransformBusiness": {
+    "h2": "Bereit, das Gesundheitswesen & Wellness zu transformieren?",
+    "p1": "Die Zukunft des Gesundheitswesens gehört den frühen Innovatoren. Ob Sie personalisierte Medizin revolutionieren, Lösungen für das Altern zu Hause verbessern oder die Technologie für Frauengesundheit transformieren möchten – AICogniTech bietet Ihnen die modernste KI-Expertise und Unterstützung, die Sie benötigen, um in der digitalen KI-Gesundheitsrevolution führend zu sein.",
+    "sp1": "Vereinbaren Sie noch heute eine Beratung und erfahren Sie, wie wir Ihnen helfen können, KI zu nutzen, um die Zukunft der Langlebigkeit und des Wohlbefindens zu gestalten."
   }
 }

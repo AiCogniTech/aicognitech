@@ -13,49 +13,56 @@ import Sp from "@/../public/images/spain.png"
 import Fr from "@/../public/images/france.png"
 import It from "@/../public/images/italy.png"
 import Image from 'next/image'
-import { useRouter } from 'next/navigation';
+import { Locale, routing, usePathname, useRouter } from '@/i18n/routing'
+import { useParams } from 'next/navigation';
 
 const MultiLingualTool = () => {
     const router = useRouter();
-    // const { pathname, query, asPath, locale } = router;
-    // const switchLanguage = (lang: string) => {
-    //     router.push({ pathname, query }, asPath, { locale: lang });
-    //   };
-    console.log(`Router: ${router}`)
+    // const pathname = usePathname();
+    const params = useParams();
+  
+
+    function onSelectChange(nextLocale: string) {
+        router.replace(
+          // @ts-expect-error -- TypeScript will validate that only known `params`
+          // are used in combination with a given `pathname`. Since the two will
+          // always match for the current route, we can skip runtime checks.
+          {  params },
+          { locale: nextLocale as Locale }
+        );
+      }
+      
+    // console.log(routing)
+    // console.log(`Router: ${router}`)
     const data = [
         {
             title: "EN",
-            value: "en",
+            value: routing.locales[0],
             icon: UK,
-            // onClick: () => switchLanguage('en')
         },
         {
             title: "DE",
-            value: "de",
+            value: routing.locales[2],
             icon: Gr,
-            // onClick: () => switchLanguage('de')
         },
         {
             title: "ES",
-            value: "es",
+            value: routing.locales[4],
             icon: Sp,
-            // onClick: () => switchLanguage('es')
         },
         {
             title: "FR",
-            value: "fr",
+            value: routing.locales[1],
             icon: Fr,
-            // onClick: () => switchLanguage('fr')
         },
         {
             title: "IT",
-            value: "it",
+            value: routing.locales[3],
             icon: It,
-            // onClick: () => switchLanguage('it')
         },
     ]
     return (
-        <Select defaultValue='en'>
+        <Select defaultValue={routing.defaultLocale} onValueChange={onSelectChange}>
             <SelectTrigger className="rounded-full font-normal font-helvetica">
                 <SelectValue placeholder="Select Language"/>
             </SelectTrigger>

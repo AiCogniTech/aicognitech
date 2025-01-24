@@ -1,9 +1,11 @@
 "use client"
 import React, { useRef, useEffect } from 'react';
 import CtaButton from '../shared/CtaButton';
+import { getTranslations } from 'next-intl/server';
 
 const Hero = () => {
     const videoRef = useRef<HTMLVideoElement | null>(null);
+    // const t = await getTranslations("Hero");
 
     useEffect(() => {
         // Set the playbackRate for the video
