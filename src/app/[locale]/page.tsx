@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import Advantage from "@/components/root/Advantage";
 import BusinessTransform from "@/components/root/BusinessTransform";
 import Hero from "@/components/root/Hero";
@@ -16,7 +16,7 @@ export default async function Home() {
   return (
     <main>
       <div>
-      <h1>{t('title')}</h1> 
+      <h1 className="text-text">{t('title')}</h1> 
     </div>
       <Hero />
       <Technology />
