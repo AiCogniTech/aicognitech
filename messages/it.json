@@ -1,4 +1,10 @@
 {
+  "HomePage": {
+    "title": "Ciao mondo!",
+    "welcome": {
+      "title": "Benvenuto nella pagina principale"
+    }
+  },
   "Hero": {
     "h1": "Innovazione AI per i settori FemTech, AgeTech, HealthTech, Benessere e Longevità",
     "h4": "Soluzioni strategiche di AI per il futuro della salute e del benessere"

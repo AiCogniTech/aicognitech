@@ -1,4 +1,10 @@
 {
+  "HomePage": {
+    "title": "Bonjour le monde!",
+    "welcome": {
+      "title": "Bienvenue sur la page d'accueil"
+    }
+  },
   "Hero": {
     "h1": "Innovation IA pour les secteurs FemTech, AgeTech, HealthTech, Bien-être et Longévité",
     "h4": "Solution stratégique d'IA pour l'avenir de la santé et du bien-être"
