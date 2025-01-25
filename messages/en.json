@@ -5,7 +5,7 @@
             "1" : "Blog",
             "2" : "Contact"
         },
-        "p" : "© 2025 AiCogniTech. All rights reserved."
+        "p" : "Copyright 2025 AiCogniTech | All Rights Reserved"
     },
     "HomePage": {
         "Hero": {
@@ -16,8 +16,8 @@
             "h2_1": "Innovative AI Solutions for Health & Wellness: ",
             "h2_2": "Redefining Industry Standards",
             "p1": "We specialize in custom AI consulting and integration services, focusing on",
-            "sp1": "FemTech, AgeTech, and Longevity.",
-            "p2": "Our approach involves immersing ourselves in your organization to identify tedious, repetitive processes that hinder efficiency—from marketing and sales to patient engagement, operations, and more. We then develop tailored AI bots, agents, and automations using leading LLMs (such as ChatGPT, Claude, Gemini), CustomGPTs, and our own innovative frameworks.",
+            "sp1": "FemTech, HealthTech, AgeTech, and Longevity.",
+            "p2": "Our approach involves immersing ourselves in your organization to identify to identify pain points, repetitive processes that hinder efficiency—from marketing and sales to patient engagement, operations, and more. We then develop tailored AI bots, agents, and automations using leading LLMs (such as ChatGPT, Claude, Gemini), CustomGPTs, and our own innovative frameworks.",
             "sp2": "Ready to transform how your team delivers care and drives growth?"
         },
         "OwnerOverwrite": {
