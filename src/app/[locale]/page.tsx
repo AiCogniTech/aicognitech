@@ -9,16 +9,13 @@ import TraditionalAiIntegration from "@/components/root/TraditionalAiIntegration
 import TransformationJourney from "@/components/root/TransformationJourney";
 import TransformBusiness from "@/components/root/TransformBusiness";
 import WeServe from "@/components/root/WeServe";
-import { getTranslations } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
 
-export default async function Home() {
-  const t = await getTranslations("HomePage");
-  console.log(t('welcome.title'))
+export default async function Home({params}: {params: {locale: string}}) {
+  const locale = (await (params)).locale
+  setRequestLocale(locale);
   return (
     <main>
-      <div>
-      <h1 className="text-text">{t('title')}</h1>
-    </div>
       <Hero />
       <Technology />
       <OwnerOveriew />

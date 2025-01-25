@@ -7,13 +7,15 @@ export const routing = defineRouting({
 
   // Used when no locale matches
   defaultLocale: "en",
-  // pathnames: {
-  //   "/contact": {
-  //     en: "/contact-me",
-  //     fr: "/contactez-moi",
-  //     de: "/kontaktiere-mich",
-  //   },
-  // },
+  pathnames: {
+    "/contact-us": {
+      en: "/contact-us",
+      fr: "/contactez-moi",
+      de: "/kontaktiere-mich",
+      it: "/contattaci",
+      es: "/contacta-con-nosotras"
+    },
+  },
 });
 
 // Lightweight wrappers around Next.js' navigation APIs

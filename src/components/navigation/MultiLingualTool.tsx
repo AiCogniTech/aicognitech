@@ -15,54 +15,58 @@ import It from "@/../public/images/italy.png"
 import Image from 'next/image'
 import { Locale, routing, usePathname, useRouter } from '@/i18n/routing'
 import { useParams } from 'next/navigation';
+import { useLocale } from 'next-intl';
 
 const MultiLingualTool = () => {
     const router = useRouter();
-    // const pathname = usePathname();
-    const params = useParams();
-  
 
+    const pathname = usePathname();
+    const params = useParams();
+
+    const localeLang = useLocale();
+  
     function onSelectChange(nextLocale: string) {
-        router.replace(
-          // @ts-expect-error -- TypeScript will validate that only known `params`
-          // are used in combination with a given `pathname`. Since the two will
-          // always match for the current route, we can skip runtime checks.
-          {  params },
-          { locale: nextLocale as Locale }
-        );
-      }
+      router.replace(
+        // @ts-expect-error -- TypeScript will validate that only known `params`
+        // are used in combination with a given `pathname`. Since the two will
+        // always match for the current route, we can skip runtime checks.
+        { pathname, params },
+        { locale: nextLocale as Locale }
+      );
+    }
+  
       
     // console.log(routing)
     // console.log(`Router: ${router}`)
     const data = [
         {
             title: "EN",
-            value: routing.locales[0],
+            value: routing?.locales[0],
             icon: UK,
         },
         {
             title: "DE",
-            value: routing.locales[2],
+            value: routing?.locales[2],
             icon: Gr,
         },
         {
             title: "ES",
-            value: routing.locales[4],
+            value: routing?.locales[4],
             icon: Sp,
         },
         {
             title: "FR",
-            value: routing.locales[1],
+            value: routing?.locales[1],
             icon: Fr,
         },
         {
             title: "IT",
-            value: routing.locales[3],
+            value: routing?.locales[3],
             icon: It,
         },
     ]
     return (
-        <Select defaultValue={routing.defaultLocale} onValueChange={onSelectChange}>
+        <Select defaultValue={localeLang} onValueChange={onSelectChange}>
             <SelectTrigger className="rounded-full font-normal font-helvetica">
                 <SelectValue placeholder="Select Language"/>
             </SelectTrigger>

@@ -1,150 +1,170 @@
 {
     "HomePage": {
-        "title": "Hello world!",
-        "welcome": {
-            "title": "Welcome to the home page"
+        "Hero": {
+            "h1": "AI Innovation for FemTech, AgeTech, HealthTech, Wellness & Longevity Sectors",
+            "h4": "Strategic AI Solution for the Future of Health & Wellbeing"
+        },
+        "Technology": {
+            "h2_1": "Innovative AI Solutions for Health & Wellness: ",
+            "h2_2": "Redefining Industry Standards",
+            "p1": "We specialize in custom AI consulting and integration services, focusing on",
+            "sp1": "FemTech, AgeTech, and Longevity.",
+            "p2": "Our approach involves immersing ourselves in your organization to identify tedious, repetitive processes that hinder efficiency—from marketing and sales to patient engagement, operations, and more. We then develop tailored AI bots, agents, and automations using leading LLMs (such as ChatGPT, Claude, Gemini), CustomGPTs, and our own innovative frameworks.",
+            "sp2": "Ready to transform how your team delivers care and drives growth?"
+        },
+        "OwnerOverwrite": {
+            "h2_1": "Elevating",
+            "span": "Health Industries",
+            "h2_2": "with Personalized AI",
+            "h4": "Cebuan De La Rochette",
+            "h6": "CEO & Founder",
+            "p": "Cebuan De La Rochette is on a mission to transform Health and Wellness through AI-driven marketing and sales. As the Founder & CEO of AICogniTech®, she collaborates with forward-thinking companies in FemTech, AgeTech, HealthTech, and Longevity to create solutions that truly enhance human well-being. Drawing on extensive expertise in AI architecture & multi-model prompt engineering, Cebuan guides leaders across the globe—helping them navigate today’s fast-paced AI landscape for real, measurable impact. With a background spanning European and international markets, she brings a multicultural perspective in English, French, German, and Italian. Ready to embrace AI without sacrificing a human touch? Cebuan is here to help you unlock unprecedented growth."
+        },
+        "BusinessTransform": {
+            "h2": "Why Choose AiCogniTech?",
+            "p": "Our AI-powered marketing tools integrate machine learning, predictive analytics, and NLP to deliver personalized campaigns globally, in any language. From boosting engagement to driving ROI, we ensure your business thrives in the competitive Health & Wellness landscape.",
+            "listItems": {
+                "0": "Sector-specific expertise",
+                "1": "International market reach, (EN, FR, DE, IT)",
+                "2": "Consultative + Personal Attention",
+                "3": "Proven solution templates, Customized bundles Strategies"
+            }
+        },
+        "Advantages": {
+            "p1": "Consumers across",
+            "span": "Health & Wellness",
+            "p2": "sectors seek personalized experiences.",
+            "p3": "We identify your specific pain points and develop tailored AI solutions to eliminate, optimize and automate everything from marketing to sales and customer interactions",
+            "advantages": {
+                "0" : {
+                    "title": "Ineffective Audience Targeting",
+                    "description": "AI-powered precision interactions connect health-centric brands with ideal customers through culturally intuitive & multilingual campaigns",
+                    "icon": "ChartColumnIncreasing"
+                },
+                "1": {
+                    "title": "Lack of Personalization",
+                    "description": "Communicate 24/7 with personalized wellness plans  - products or therapies recommendations that truly build unique customers journeys.",
+                    "icon": "Sparkles"
+                },
+                "2": {
+                    "title": "Weak ROI",
+                    "description": "Convert your AI marketing spend into tangible growth with AI-optimized targeting and analytics designed for the Health & Wellness industry.",
+                    "icon": "Grip"
+                },
+                "3": {
+                    "title": "Low Customer Retention",
+                    "description": "Foster lasting patient and consumer relationships with intelligent, personalized Health and Wellness engagement.",
+                    "icon": "ShieldCheck"
+                }
+            }
+        },
+        "WeServe": {
+            "p1": "Who We Serve",
+            "p2": "We identify your specific pain points and develop tailored AI solutions to eliminate, optimize and automate everything from marketing to sales and customer interactions",
+            "ServingIndustries": {
+                "0" :{
+                    "title": "HealthTech & FemTech Innovators",
+                    "description": "With 71% of consumers expecting personalized care, we help HealthTech and FemTech brands harness AI to predict needs, enhance experiences, and streamline operations. Turn complex health data into actionable insights and lead the future of wellness.",
+                    "icon": "HeartPulse"
+                },
+                "1": {
+                    "title": "Longevity & AgeTech Leaders",
+                    "description": "As the 60+ population doubles by 2050, we equip AgeTech and Longevity brands with AI solutions to deliver personalized health insights & wellness programs. Meet the growing demand for aging-in-place solutions with precision.",
+                    "icon": "BicepsFlexed"
+                },
+                "2": {
+                    "title": "Global Health & Wellness Enterprises",
+                    "description": "With 80% of consumers seeking holistic wellness, we help enterprises deploy AI to enhance efficiency, reduce costs, and deliver culturally adaptive experiences. Scale your brand globally with AI-driven insights and top-tier compliance.",
+                    "icon": "Hospital"
+                }
+            }
+        },
+        "TraditionalAI": {
+            "h2": "AI-Powered Market Acceleration for Health Innovation",
+            "p2": "Why us?  We dive deep into your sector's unique challenges. Our specialized AI team works only with FemTech, AgeTech, HealthTech, and Longevity innovators",
+            "ul": {
+                "0" : "Personalized Marketing at Scale",
+                "1" : "Complex Product Education & Communication",
+                "2" : "Lead Qualification & Sales Cycle Optimization",
+                "3" : "Market Intelligence & Competitive Positioning"
+            }
+        },
+        "TransforamtionJourney": {
+            "h2": "Your Custom AI Transformation Journey",
+            "p1": "Welcome to AiCogniTech, where we turn AI potential into measurable business results. Our expertise lies in developing bespoke AI solutions that adapt to your unique operational challenges. We distinguish ourselves by creating intuitive, powerful tools that amplify your team's natural capabilities, streamline complex processes, and eliminate persistent bottlenecks. Our approach isn't about replacing human insight - it's about augmenting it with AI that understands your specific business context, leading to exponential improvements in productivity & performance",
+            "journeySteps": {
+                "0" : {
+                    "title": "Your Sector-Specific AI Transformation",
+                    "description": "AICogniTech delivers specialized AI marketing and sales focused solutions for FemTech, AgeTech, HealthTech, and Longevity sectors. We strive for a data-driven approach revolutionizing how you connect with your target audience and scale your market presence.",
+                    "icon": "One"
+                },
+                "1" : {
+                    "title": "Strategic AI Design",
+                    "description": "Get sector-specific AI solutions that amplify your market impact. FemTech startups see 60% faster market penetration. AgeTech companies achieve 45% higher engagement rates. HealthTech firms reduce customer acquisition costs by 40%. Longevity brands expand market reach by 3x.",
+                    "icon": "Two"
+                },
+                "2" : {
+                    "title": "AI-Powered Implementation",
+                    "description": "Deploy customized AI marketing, sales & automation tools - that resonate with your sector's unique audience. Automated content generation, precise audience targeting, and multilingual campaign optimization (EN, FR, DE, IT) ensure maximum impact across all your markets.",
+                    "icon": "Three"
+                },
+                "3" : {
+                    "title": "Market Transformation",
+                    "description": "Experience tangible breakthrough results in your sector. Companies achieve 50% faster content creation, 65% increase in qualified leads, and 40% higher conversion rates. Your innovations reach the right audience with precision and scale.",
+                    "icon": "Four"
+                }
+            }
+        },
+        "TraditionalAiIntegration": {
+            "h2": "AI-Powered Market Acceleration for Health Innovation",
+            "p1": "Why us?  We dive deep into your sector's unique challenges. Our specialized AI team works only with FemTech, AgeTech, HealthTech, and Longevity innovators",
+            "aiIntegrations": {
+                "0" : {
+                    "title": "Accelerated Expert Solutions",
+                    "description": "Leverage our sector-specific frameworks as your foundation, enhanced with deep customization. Optimized to: \n• Market positioning and audience segments \n• Growth objectives and KPIs \n• Competitive landscape and differentiators"
+                },
+                "1" : {
+                    "title": "Expert Leadership",
+                    "description": "Led by Cebuan de La Rochette, a multilingual AI strategist with deep expertise in health tech innovation across European and Global markets."
+                },
+                "2" : {
+                    "title": "Hands-On Support",
+                    "description": "From market analysis to AI implementation, we're with you at every stage. Our multi-language capability (EN, FR, DE, IT) ensures seamless scaling across European markets."
+                },
+                "3" : {
+                    "title": "Proven Results",
+                    "description": "Track record of delivering 3x market reach for FemTech startups, 45% efficiency gains for AgeTech companies, and 40% growth in conversion rates for HealthTech innovators."
+                }
+            }
+        },
+        "TransformBusiness": {
+            "h2": "Ready to Transform Healthcare & Wellness?",
+            "p1": "The future of health belongs to early innovators. Whether you're looking to revolutionize personalized medicine, enhance aging-in-place solutions, or transform women's health technology, AICogniTech provides the cutting-edge AI expertise and support you need to lead in the AI digital health revolution.",
+            "sp1": "Schedule a consultation today & discover how we can help you leverage AI to pioneer the future of longevity and wellness."
         }
     },
-    "Hero": {
-        "h1": "AI Innovation for FemTech, AgeTech, HealthTech, Wellness & Longevity Sectors",
-        "h4": "Strategic AI Solution for the Future of Health & Wellbeing"
-    },
-    "Technology": {
-        "h2_1": "Innovative AI Solutions for Health & Wellness: ",
-        "h2_2": "Redefining Industry Standards",
-        "p1": "We specialize in custom AI consulting and integration services, focusing on",
-        "sp1": "FemTech, AgeTech, and Longevity.",
-        "p2": "Our approach involves immersing ourselves in your organization to identify tedious, repetitive processes that hinder efficiency—from marketing and sales to patient engagement, operations, and more. We then develop tailored AI bots, agents, and automations using leading LLMs (such as ChatGPT, Claude, Gemini), CustomGPTs, and our own innovative frameworks.",
-        "sp2": "Ready to transform how your team delivers care and drives growth?"
-    },
-    "OwnerOverwie": {
-        "h2_1": "Elevating",
-        "span": "Health Industries",
-        "h2_2": "with Personalized AI",
-        "h4": "Cebuan De La Rochette",
-        "h6": "CEO & Founder",
-        "p": "Cebuan De La Rochette is on a mission to transform Health and Wellness through AI-driven marketing and sales. As the Founder & CEO of AICogniTech®, she collaborates with forward-thinking companies in FemTech, AgeTech, HealthTech, and Longevity to create solutions that truly enhance human well-being. Drawing on extensive expertise in AI architecture & multi-model prompt engineering, Cebuan guides leaders across the globe—helping them navigate today’s fast-paced AI landscape for real, measurable impact. With a background spanning European and international markets, she brings a multicultural perspective in English, French, German, and Italian. Ready to embrace AI without sacrificing a human touch? Cebuan is here to help you unlock unprecedented growth."
-    },
-    "BusinessTransform": {
-        "h2": "Why Choose AiCogniTech?",
-        "p": "Our AI-powered marketing tools integrate machine learning, predictive analytics, and NLP to deliver personalized campaigns globally, in any language. From boosting engagement to driving ROI, we ensure your business thrives in the competitive Health & Wellness landscape.",
-        "listItems": {
-            "l1": "Sector-specific expertise",
-            "l2": "International market reach, (EN, FR, DE, IT)",
-            "l3": "Consultative + Personal Attention",
-            "l4": "Proven solution templates, Customized bundles Strategies"
+    "button": {
+        "ctabuton": "Request Services",
+        "techButton": "The Technology"
+    }, 
+    "blog": {
+        "hero" : {
+            "h1" : "Newsletter  -  Stay Ahead of the Curve: Join AiCogniTech",
+            "p" : "Gain exclusive access to industry-leading AI strategies, expert insights, and behind-the-scenes happenings on advancements in FEMTech, AgeTech, HealthTech, and Longevity. Subscribe now to receive tailored tips and sector specific trends directly to your inbox, from Cebuan and the AICogniTech team."
+        },
+        "TransformContent" : {
+            "h4" : "Elevate Your Brand with AI-Powered Content & Automation",
+            "p" : "At AiCogniTech, we create tailored AI-driven content for FEMTech, AgeTech, HealthTech, and Longevity sectors. Enhance your social media presence with engaging, industry-specific posts that resonate with your audience. Our AI & data automation streamline content creation, scheduling, and performance tracking, keeping your brand impactful & relevant. Ready to elevate your digital strategy"
         }
     },
-    "Advantages": {
-        "p1": "Consumers across",
-        "span": "Health & Wellness",
-        "p2": "sectors seek personalized experiences.",
-        "p3": "We identify your specific pain points and develop tailored AI solutions to eliminate, optimize and automate everything from marketing to sales and customer interactions",
-        "advantages": [
-            {
-                "title": "Ineffective Audience Targeting",
-                "description": "AI-powered precision interactions connect health-centric brands with ideal customers through culturally intuitive & multilingual campaigns",
-                "icon": "ChartColumnIncreasing"
-            },
-            {
-                "title": "Lack of Personalization",
-                "description": "Communicate 24/7 with personalized wellness plans  - products or therapies recommendations that truly build unique customers journeys.",
-                "icon": "Sparkles"
-            },
-            {
-                "title": "Weak ROI",
-                "description": "Convert your AI marketing spend into tangible growth with AI-optimized targeting and analytics designed for the Health & Wellness industry.",
-                "icon": "Grip"
-            },
-            {
-                "title": "Low Customer Retention",
-                "description": "Foster lasting patient and consumer relationships with intelligent, personalized Health and Wellness engagement.",
-                "icon": "ShieldCheck"
-            }
-        ]
-    },
-    "WeServe": {
-        "p1": "Who We Serve",
-        "p2": "We identify your specific pain points and develop tailored AI solutions to eliminate, optimize and automate everything from marketing to sales and customer interactions",
-        "ServingIndustries": [
-            {
-                "title": "HealthTech & FemTech Innovators",
-                "description": "With 71% of consumers expecting personalized care, we help HealthTech and FemTech brands harness AI to predict needs, enhance experiences, and streamline operations. Turn complex health data into actionable insights and lead the future of wellness.",
-                "icon": "HeartPulse"
-            },
-            {
-                "title": "Longevity & AgeTech Leaders",
-                "description": "As the 60+ population doubles by 2050, we equip AgeTech and Longevity brands with AI solutions to deliver personalized health insights & wellness programs. Meet the growing demand for aging-in-place solutions with precision.",
-                "icon": "BicepsFlexed"
-            },
-            {
-                "title": "Global Health & Wellness Enterprises",
-                "description": "With 80% of consumers seeking holistic wellness, we help enterprises deploy AI to enhance efficiency, reduce costs, and deliver culturally adaptive experiences. Scale your brand globally with AI-driven insights and top-tier compliance.",
-                "icon": "Hospital"
-            }
-        ]
-    },
-    "TraditionalAI": {
-        "h2": "AI-Powered Market Acceleration for Health Innovation",
-        "p2": "Why us?  We dive deep into your sector's unique challenges. Our specialized AI team works only with FemTech, AgeTech, HealthTech, and Longevity innovators",
-        "ul": [
-            "Personalized Marketing at Scale",
-            "Complex Product Education & Communication",
-            "Lead Qualification & Sales Cycle Optimization",
-            "Market Intelligence & Competitive Positioning"
-        ]
-    },
-    "TransforamtionJourney": {
-        "h2": "Your Custom AI Transformation Journey",
-        "p1": "Welcome to AiCogniTech, where we turn AI potential into measurable business results. Our expertise lies in developing bespoke AI solutions that adapt to your unique operational challenges. We distinguish ourselves by creating intuitive, powerful tools that amplify your team's natural capabilities, streamline complex processes, and eliminate persistent bottlenecks. Our approach isn't about replacing human insight - it's about augmenting it with AI that understands your specific business context, leading to exponential improvements in productivity & performance",
-        "journeySteps": [
-            {
-                "title": "Your Sector-Specific AI Transformation",
-                "description": "AICogniTech delivers specialized AI marketing and sales focused solutions for FemTech, AgeTech, HealthTech, and Longevity sectors. We strive for a data-driven approach revolutionizing how you connect with your target audience and scale your market presence.",
-                "icon": "One"
-            },
-            {
-                "title": "Strategic AI Design",
-                "description": "Get sector-specific AI solutions that amplify your market impact. FemTech startups see 60% faster market penetration. AgeTech companies achieve 45% higher engagement rates. HealthTech firms reduce customer acquisition costs by 40%. Longevity brands expand market reach by 3x.",
-                "icon": "Two"
-            },
-            {
-                "title": "AI-Powered Implementation",
-                "description": "Deploy customized AI marketing, sales & automation tools - that resonate with your sector's unique audience. Automated content generation, precise audience targeting, and multilingual campaign optimization (EN, FR, DE, IT) ensure maximum impact across all your markets.",
-                "icon": "Three"
-            },
-            {
-                "title": "Market Transformation",
-                "description": "Experience tangible breakthrough results in your sector. Companies achieve 50% faster content creation, 65% increase in qualified leads, and 40% higher conversion rates. Your innovations reach the right audience with precision and scale.",
-                "icon": "Four"
-            }
-        ]
-    },
-    "TraditionalAiIntegration": {
-        "h2": "AI-Powered Market Acceleration for Health Innovation",
-        "p1": "Why us?  We dive deep into your sector's unique challenges. Our specialized AI team works only with FemTech, AgeTech, HealthTech, and Longevity innovators",
-        "aiIntegrations": [
-            {
-                "title": "Accelerated Expert Solutions",
-                "description": "Leverage our sector-specific frameworks as your foundation, enhanced with deep customization. Optimized to: \n• Market positioning and audience segments \n• Growth objectives and KPIs \n• Competitive landscape and differentiators"
-            },
-            {
-                "title": "Expert Leadership",
-                "description": "Led by Cebuan de La Rochette, a multilingual AI strategist with deep expertise in health tech innovation across European and Global markets."
-            },
-            {
-                "title": "Hands-On Support",
-                "description": "From market analysis to AI implementation, we're with you at every stage. Our multi-language capability (EN, FR, DE, IT) ensures seamless scaling across European markets."
-            },
-            {
-                "title": "Proven Results",
-                "description": "Track record of delivering 3x market reach for FemTech startups, 45% efficiency gains for AgeTech companies, and 40% growth in conversion rates for HealthTech innovators."
-            }
-        ]
-    },
-    "TransformBusiness": {
-        "h2": "Ready to Transform Healthcare & Wellness?",
-        "p1": "The future of health belongs to early innovators. Whether you're looking to revolutionize personalized medicine, enhance aging-in-place solutions, or transform women's health technology, AICogniTech provides the cutting-edge AI expertise and support you need to lead in the AI digital health revolution.",
-        "sp1": "Schedule a consultation today & discover how we can help you leverage AI to pioneer the future of longevity and wellness."
+    "Contact" : {
+        "Hero" : {
+            "h1_1" : "Partner & Grow:",
+            "h1_2" : "AI for",
+            "span" : "Health",
+            "h1_3" : "&",
+            "span2" : "Wellness",
+            "p" : "Harness AI to Boost Your Health & Wellness Business. Schedule Your Discovery Call Today!"
+        }
     }
 }

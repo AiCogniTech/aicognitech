@@ -1,19 +1,21 @@
 import { journeySteps } from '@/constant/constant'
+import { getTranslations } from 'next-intl/server';
 import Image from 'next/image'
 import React from 'react'
 
-const TransformationJourney = () => {
+const TransformationJourney = async () => {
+    const t = await getTranslations("HomePage.TransforamtionJourney");
     return (
         <section className='flex flex-col lg:flex-row gap-12 px-5 md:px-10 lg:px-16 py-10 lg:py-20 bg-primary text-secondary'>
             {/* Custom Transformation Journey */}
             <div className='flex flex-col items-start gap-6 font-helvetica flex-1 h-full lg:sticky top-20'>
                 <h2 className='section_heading'>
-                    Your Custom AI Transformation Journey
+                    {t("h2")}
                 </h2>
 
                 {/* Paragraph with text only */}
                 <p className='text-base md:text-lg lg:text-xl font-light'>
-                    Welcome to AiCogniTech, where we turn AI potential into measurable business results. Our expertise lies in developing bespoke AI solutions that adapt to your unique operational challenges. We distinguish ourselves by creating intuitive, powerful tools that amplify your team's natural capabilities, streamline complex processes, and eliminate persistent bottlenecks. Our approach isn't about replacing human insight - it's about augmenting it with AI that understands your specific business context, leading to exponential improvements in productivity & performance
+                    {t('p1')}
                 </p>
             </div>
             {/* Transformation Journey Steps */}
@@ -28,10 +30,10 @@ const TransformationJourney = () => {
                                 width={50}
                             />
                             <h4 className='text-primary text-xl md:text-2xl font-bold'>
-                                {step.title}
+                                {t(`journeySteps.${index}.title`)}
                             </h4>
                             <p className='text-text-secodnary text-lg md:text-xl lg:text-2xl font-light'>
-                                {step.description}
+                                {t(`journeySteps.${index}.description`)}
                             </p>
                         </div>
                     ))
