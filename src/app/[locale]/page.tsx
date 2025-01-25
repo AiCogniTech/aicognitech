@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import Advantage from "@/components/root/Advantage";
 import BusinessTransform from "@/components/root/BusinessTransform";
 import Hero from "@/components/root/Hero";
@@ -9,18 +9,13 @@ import TraditionalAiIntegration from "@/components/root/TraditionalAiIntegration
 import TransformationJourney from "@/components/root/TransformationJourney";
 import TransformBusiness from "@/components/root/TransformBusiness";
 import WeServe from "@/components/root/WeServe";
-import useTranslation from 'next-translate/useTranslation';
+import { setRequestLocale } from "next-intl/server";
 
-export default function Home() {
-  // const { t } = useTranslation('common');
-  const t = useTranslation('common');
-  console.log(t)
+export default async function Home({params}: {params: {locale: string}}) {
+  const locale = (await (params)).locale
+  setRequestLocale(locale);
   return (
     <main>
-      {/* <div>
-      <h1>{t('welcome')}</h1> 
-      <p>{t('blog')}</p>
-    </div> */}
       <Hero />
       <Technology />
       <OwnerOveriew />

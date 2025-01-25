@@ -6,8 +6,10 @@ import React from 'react'
 import CtaButton from '../shared/CtaButton'
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { getTranslations } from 'next-intl/server'
 
-const Footer = () => {
+const Footer = async () => {
+    const t = await getTranslations("Navigation");
     return (
         <footer className='sections_container !my-10'>
             {/* Upper Section */}
@@ -33,7 +35,7 @@ const Footer = () => {
                                             className={cn('hover:text-primary transition duration-300 font-light text-base'
                                             )}
                                         >
-                                            {nav.title}
+                                            {t(`navlist.${index}`)}
                                         </Link>
                                     )
                                 })
@@ -121,7 +123,7 @@ const Footer = () => {
                     />
                 </Link>
                 <p className='text-sm lg:text-base font-bold font-helvetica'>
-                    © 2025 AiCogniTech. All rights reserved.
+                    {t('p')}
                 </p>
             </div>
         </footer>

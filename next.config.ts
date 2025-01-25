@@ -1,26 +1,29 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+import type { NextConfig } from "next";
+import createNextIntlPlugin from "next-intl/plugin";
+
+const withNextIntl = createNextIntlPlugin();
+
+const nextConfig: NextConfig = {
   typescript: {
-      ignoreBuildErrors: true,
+    ignoreBuildErrors: true,
   },
   eslint: {
-      ignoreDuringBuilds: true,
+    ignoreDuringBuilds: true,
   },
   images: {
-      remotePatterns: [
-          {
-              protocol: 'https',
-              hostname: "**",
-              port: ''
-          },
-          {
-              protocol: 'http',
-              hostname: "**.com",
-              port: ''
-          },
-      ]
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**",
+        port: "",
+      },
+      {
+        protocol: "http",
+        hostname: "**.com",
+        port: "",
+      },
+    ],
   },
 };
 
-
-export default nextConfig;
+export default withNextIntl(nextConfig);
