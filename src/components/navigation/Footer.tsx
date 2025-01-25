@@ -123,7 +123,7 @@ const Footer = async () => {
                     />
                 </Link>
                 <p className='text-sm lg:text-base font-bold font-helvetica'>
-                    {t("p")}
+                    {t('p')}
                 </p>
             </div>
         </footer>

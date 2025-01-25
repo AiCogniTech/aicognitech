@@ -16,10 +16,10 @@ const TraditionalAi = async () => {
                 </div>
                 <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5'>
                     {
-                        ["Personalized Marketing at Scale", "Complex Product Education & Communication",
-                            "Lead Qualification & Sales Cycle Optimization", "Market Intelligence & Competitive Positioning"
+                        ["Identify performance bottlenecks", "Streamline marketing & sales processes",
+                            "Create bespoke AI tools tailored to your needs", "Transform operational pain points into competitive advantages"
                         ].map((_, index) =>(
-                            <li className='flex flex-col justify-center items-start gap-4 text-lg font-bold text-primary text-center border-2 border-primary p-8 rounded-xl' key={index}>
+                            <li className='flex flex-col justify-center items-start gap-4 text-lg font-bold text-primary border-2 border-primary p-8 rounded-xl' key={index}>
                                 {t(`ul.${index}`)}
                             </li>
                         ))

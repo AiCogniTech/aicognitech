@@ -24,7 +24,7 @@ export default async function Home({params}: {params: {locale: string}}) {
       <WeServe />
       <TraditionalAi />
       <TransformationJourney />
-      <TraditionalAiIntegration />
+      <TraditionalAiIntegration /> 
       <TransformBusiness />
     </main>
   );
