@@ -6,6 +6,7 @@ import "./globals.css";
 import { Locale, routing } from "@/i18n/routing";
 import Header from "@/components/navigation/Header";
 import Footer from "@/components/navigation/Footer";
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -40,6 +41,7 @@ export default async function RootLayout({
           <Header locale={locale} />
           {children}
           <Footer />
+          <Analytics />
         </NextIntlClientProvider>
       </body>
     </html>

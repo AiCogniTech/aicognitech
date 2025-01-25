@@ -1,4 +1,12 @@
 {
+    "Navigation": {
+        "navlist": {
+            "0": "Home",
+            "1": "Blog",
+            "2": "Kontakt"
+        },
+        "p" : "© 2025 AiCogniTech. Alle Rechte vorbehalten."
+    },
     "HomePage": {
         "Hero": {
             "h1": "KI-Innovation für die Sektoren FemTech, AgeTech, HealthTech, Wellness und Langlebigkeit",
