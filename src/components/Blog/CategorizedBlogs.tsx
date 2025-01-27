@@ -13,7 +13,7 @@ interface Category {
   _id: string;
 }
 
-const CategorizedBlogs = () => {
+const CategorizedBlogs = ({locale}: {locale: string}) => {
   const [categories, setCategories] = useState<Category[]>([])
   const searchParams = useSearchParams()
 

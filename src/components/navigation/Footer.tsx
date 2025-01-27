@@ -4,9 +4,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import CtaButton from '../shared/CtaButton'
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
 import { getTranslations } from 'next-intl/server'
+import SocialMediaLinks from '../shared/SocialMediaLinks'
 
 const Footer = async () => {
     const t = await getTranslations("Navigation");
@@ -49,47 +48,14 @@ const Footer = async () => {
 
                 {/*  Social Media Icons &other Images */}
                 <div className='flex flex-col-reverse md:flex-row justify-between items-center gap-5'>
-                    <div className='space-y-4'>
+                    <div className='flex flex-col items-start gap-4'>
                         <h6 className='text-base font-bold'>
                             Email: <Link href={"mailto:contact@AiCognitech.com"}
                                 className='hover:underline hover:text-primary duration-300'>
                                 contact@AiCognitech.com
                             </Link>
                         </h6>
-                        <div className="flex items-center gap-6 py-2 px-3 rounded-full border-text bg-slate-600/40 w-full">
-                            <Link href={"https://www.facebook.com/brain.power.1272"}
-                                className='rounded-full group bg-tertiary p-2 hover:scale-[1.02] transition duration-500'
-                            >
-                                <FaFacebook
-                                    size={22}
-                                    className="cursor-pointer"
-                                />
-                            </Link>
-                            <Link href={"https://www.instagram.com/Aicognitech3000"}
-                                className='rounded-full bg-tertiary p-2 hover:scale-[1.02] transition duration-500'
-                            >
-                                <FaInstagram
-                                    size={22}
-                                    className="cursor-pointer"
-                                />
-                            </Link>
-                            <Link href={'https://www.linkedin.com/in/aicogntech-ai-powered-health-wellness-technology-solutions/'}
-                                className='rounded-full bg-tertiary p-2 hover:scale-[1.02] transition duration-500'
-                            >
-                                <FaLinkedin
-                                    size={22}
-                                    className="cursor-pointer"
-                                />
-                            </Link>
-                            <Link href={'https://x.com/@EarthHealthTech'}
-                                className='rounded-full bg-tertiary p-2 hover:scale-[1.02] transition duration-500'
-                            >
-                                <FaXTwitter
-                                    size={22}
-                                    className="cursor-pointer"
-                                />
-                            </Link>
-                        </div>
+                        <SocialMediaLinks />
                     </div>
 
                     <div className='flex items-center gap-5'>

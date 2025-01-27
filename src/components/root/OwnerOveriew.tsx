@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { getTranslations } from 'next-intl/server';
+import SocialMediaLinks from '../shared/SocialMediaLinks';
 
 const OwnerOveriew = async () => {
     const t = await getTranslations("HomePage.OwnerOverwrite");
@@ -25,7 +26,7 @@ const OwnerOveriew = async () => {
                         {t('p')}
                     </p>
                 </div>
-                <div className='flex-1 flex justify-center items-center hover:scale-[1.01] hover:shadow-md transition-all duration-700'>
+                <div className='flex-1 flex flex-col gap-5 justify-center items-center hover:scale-[1.01] hover:shadow-md transition-all duration-700'>
                     <Image
                         src={"/images/cebuan.jpg"}
                         alt='Cebuan De La Rochette'
@@ -33,6 +34,7 @@ const OwnerOveriew = async () => {
                         width={350}
                         className='rounded-sm'
                     />
+                    <SocialMediaLinks />
                 </div>
             </div>
         </section>

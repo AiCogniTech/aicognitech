@@ -8,7 +8,7 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
-const AllBlogs = () => {
+const AllBlogs = ({locale}: {locale: string}) => {
     const [blogPosts, setBlogPosts] = useState<Post[]>([]);
 
     // Safely access searchParams inside a Suspense boundary
@@ -88,7 +88,7 @@ const AllBlogs = () => {
                     {/* Content Section */}
                     <div className="p-5 space-y-5">
                         <h2 className="text-primary text-lg md:text-xl lg:text-2xl font-bold text-ellipsis line-clamp-3 hover:cursor-pointer"
-                            onClick={() => router.push(`/blog/${post.slug}`)}
+                            onClick={() => router.push(`/${locale}/blog/${post.slug}`)}
                         >
                             {post.title}
                         </h2>
@@ -115,7 +115,7 @@ const AllBlogs = () => {
 
                         {/* Read More Button */}
                         <Link
-                            href={`/blog/${post.slug}`}
+                            href={`/${locale}/blog/${post.slug}`}
                             className="flex items-center gap-2 text-base md:text-lg text-primary/70 hover:text-primary hover:scale-[1.01] transition-all duration-500"
                         >
                             Read Now

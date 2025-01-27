@@ -5,7 +5,7 @@
       "1": "Blog",
       "2": "Contact"
     },
-    "p" : "© 2025 AiCogniTech. Tous droits réservés."
+    "p": "Copyright 2025 AiCogniTech | Tous droits réservés"
   },
   "HomePage": {
     "Hero": {
@@ -16,8 +16,8 @@
       "h2_1": "Solutions IA innovantes pour la santé et le bien-être : ",
       "h2_2": "Redéfinir les standards de l'industrie",
       "p1": "Nous sommes spécialisés dans le conseil et l'intégration de l'IA sur mesure, en mettant l'accent sur",
-      "sp1": "FemTech, AgeTech et Longévité.",
-      "p2": "Notre approche consiste à nous immerger dans votre organisation pour identifier les processus fastidieux et répétitifs qui entravent l'efficacité, qu'il s'agisse du marketing, des ventes, de l'engagement des patients, des opérations, et bien plus encore. Nous développons ensuite des bots, agents et automatisations IA sur mesure en utilisant des LLMs de pointe (tels que ChatGPT, Claude, Gemini), des CustomGPTs et nos propres cadres innovants.",
+      "sp1": "FemTech, HealthTech, AgeTech et Longevity.",
+      "p2": "Notre approche consiste à nous immerger dans votre organisation pour identifier les points faibles, les processus répétitifs qui entravent l'efficacité, du marketing et des ventes à l'engagement des patients, aux opérations, etc. Nous développons ensuite des robots, des agents et des automatisations d'IA sur mesure en utilisant des LLM de premier plan (tels que ChatGPT, Claude, Gemini), des CustomGPT et nos propres cadres innovants.",
       "sp2": "Prêt à transformer la manière dont votre équipe fournit des soins et stimule la croissance ?"
     },
     "OwnerOverwrite": {
@@ -155,7 +155,7 @@
     "ctabuton": "Demander des services",
     "techButton": "La technologie"
   },
-  "blog": {
+  "Blog": {
     "hero": {
       "h1": "Newsletter - Gardez une longueur d'avance : rejoignez AiCogniTech",
       "p": "Obtenez un accès exclusif aux stratégies d'IA de pointe, aux informations d'experts et aux coulisses des avancées de FEMTech, AgeTech, HealthTech et Longevity. Abonnez-vous maintenant pour recevoir des conseils personnalisés et des tendances sectorielles directement dans votre boîte de réception, de la part de Cebuan et de l'équipe AICogniTech."

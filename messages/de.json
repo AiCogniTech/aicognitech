@@ -5,7 +5,7 @@
             "1": "Blog",
             "2": "Kontakt"
         },
-        "p" : "© 2025 AiCogniTech. Alle Rechte vorbehalten."
+        "p": "Copyright 2025 AiCogniTech | Alle Rechte vorbehalten"
     },
     "HomePage": {
         "Hero": {
@@ -16,8 +16,8 @@
             "h2_1": "Innovative KI-Lösungen für Gesundheit & Wellness: ",
             "h2_2": "Neudefinition der Branchenstandards",
             "p1": "Wir sind auf maßgeschneiderte KI-Beratung und Integrationsservices spezialisiert, mit Fokus auf",
-            "sp1": "FemTech, AgeTech und Langlebigkeit.",
-            "p2": "Unser Ansatz besteht darin, uns intensiv mit Ihrer Organisation auseinanderzusetzen, um langwierige, sich wiederholende Prozesse zu identifizieren, die die Effizienz hemmen – von Marketing und Vertrieb bis hin zu Patientenengagement, Betriebsabläufen und mehr. Wir entwickeln dann maßgeschneiderte KI-Bots, Agenten und Automatisierungen unter Verwendung führender LLMs (wie ChatGPT, Claude, Gemini), CustomGPTs und unserer eigenen innovativen Frameworks.",
+            "sp1": "FemTech, HealthTech, AgeTech und Longevity.",
+            "p2": "Unser Ansatz besteht darin, uns in Ihre Organisation einzuarbeiten, um Schwachstellen und sich wiederholende Prozesse zu identifizieren, die die Effizienz behindern – von Marketing und Vertrieb bis hin zur Patienteneinbindung, dem Betrieb und mehr. Anschließend entwickeln wir maßgeschneiderte KI-Bots, Agenten und Automatisierungen mithilfe führender LLMs (wie ChatGPT, Claude, Gemini), CustomGPTs und unserer eigenen innovativen Frameworks.",
             "sp2": "Bereit, die Art und Weise, wie Ihr Team Pflege liefert und Wachstum vorantreibt, zu transformieren?"
         },
         "OwnerOverwrite": {
@@ -156,7 +156,7 @@
         "techButton": "Die Technologie"
     },
     "Blog": {
-        "Hero": {
+        "hero": {
             "h1": "Newsletter - Bleiben Sie auf dem Laufenden: Werden Sie Mitglied bei AiCogniTech",
             "p": "Erhalten Sie exklusiven Zugang zu branchenführenden KI-Strategien, Expertenwissen und Einblicken hinter die Kulissen zu Fortschritten in den Bereichen FEMTech, AgeTech, HealthTech und Langlebigkeit. Abonnieren Sie jetzt, um maßgeschneiderte Tipps und branchenspezifische Trends von Cebuan und dem AICogniTech-Team direkt in Ihren Posteingang zu erhalten."
         },

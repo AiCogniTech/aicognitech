@@ -5,7 +5,7 @@
             "1": "Blog",
             "2": "Contacto"
         },
-        "p" : "© 2025 AiCogniTech. Todos los derechos reservados."
+        "p": "Copyright 2025 AiCogniTech | Todos los derechos reservados"
     },
     "HomePage": {
         "Hero": {
@@ -16,8 +16,8 @@
             "h2_1": "Soluciones innovadoras de IA para la salud y el bienestar: ",
             "h2_2": "Redefiniendo los estándares de la industria",
             "p1": "Nos especializamos en consultoría y servicios de integración de IA a medida, con un enfoque en",
-            "sp1": "FemTech, AgeTech y Longevidad.",
-            "p2": "Nuestro enfoque implica sumergirnos en su organización para identificar procesos tediosos y repetitivos que obstaculizan la eficiencia, desde el marketing y las ventas hasta el compromiso con los pacientes, las operaciones y más. Luego desarrollamos bots de IA, agentes y automatizaciones personalizadas utilizando LLMs de vanguardia (como ChatGPT, Claude, Gemini), CustomGPTs y nuestros propios marcos innovadores.",
+            "sp1": "FemTech, HealthTech, AgeTech y Longevidad.",
+            "p2": "Nuestro enfoque implica sumergirnos en su organización para identificar los puntos críticos y los procesos repetitivos que obstaculizan la eficiencia, desde el marketing y las ventas hasta la interacción con los pacientes, las operaciones y más. Luego, desarrollamos bots, agentes y automatizaciones de IA personalizados utilizando los principales LLM (como ChatGPT, Claude, Gemini), CustomGPT y nuestros propios marcos innovadores.",
             "sp2": "¿Listo para transformar la forma en que su equipo brinda atención y fomenta el crecimiento?"
         },
         "OwnerOverwrite": {
@@ -155,7 +155,7 @@
         "ctabuton": "Solicitar Servicios",
         "techButton": "La tecnología"
     },
-    "blog": {
+    "Blog": {
         "hero": {
             "h1": "Boletín informativo: Manténgase a la vanguardia: únase a AiCogniTech",
             "p": "Obtenga acceso exclusivo a las estrategias de IA líderes en la industria, perspectivas de expertos y acontecimientos detrás de escena sobre los avances en FEMTech, AgeTech, HealthTech y Longevity. Suscríbase ahora para recibir consejos personalizados y tendencias específicas del sector directamente en su bandeja de entrada, de Cebuan y el equipo de AICogniTech"
