@@ -50,7 +50,7 @@ const SubscribeEmail = () => {
                     )}
                 />
                 <Button className={cn('rounded-[50px] font-bold text-base font-helvetica text-center bg-secondary text-primary hover:bg-secondary/80')} size={"lg"} type={"submit"} disabled={isPending}>
-                    Request Services
+                    Subscribe Letter
                 </Button>
             </form>
         </Form>

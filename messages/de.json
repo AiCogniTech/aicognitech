@@ -156,7 +156,7 @@
         "techButton": "Die Technologie"
     },
     "Blog": {
-        "Hero": {
+        "hero": {
             "h1": "Newsletter - Bleiben Sie auf dem Laufenden: Werden Sie Mitglied bei AiCogniTech",
             "p": "Erhalten Sie exklusiven Zugang zu branchenführenden KI-Strategien, Expertenwissen und Einblicken hinter die Kulissen zu Fortschritten in den Bereichen FEMTech, AgeTech, HealthTech und Langlebigkeit. Abonnieren Sie jetzt, um maßgeschneiderte Tipps und branchenspezifische Trends von Cebuan und dem AICogniTech-Team direkt in Ihren Posteingang zu erhalten."
         },

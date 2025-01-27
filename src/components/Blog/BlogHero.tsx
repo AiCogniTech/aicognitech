@@ -4,7 +4,7 @@ import SubscribeEmail from '../shared/SubscribeEmail'
 import { getTranslations } from 'next-intl/server';
 
 const BlogHero = async () => {
-    const t = await getTranslations("blog.hero");
+    const t = await getTranslations("Blog.hero");
     return (
         <section className="flex flex-col-reverse lg:flex-row justify-center lg:justify-start lg:items-center px-5 md:px-10 lg:px-16 w-full h-[80vh] lg:h-auto lg:min-h-[80vh] md:mb-36 xl:mb-0">
             <div className='absolute top-0 left-0 bg-primary/50 w-full h-full object-cover z-[-1] opacity-95' />

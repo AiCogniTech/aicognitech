@@ -6,7 +6,7 @@ import React from 'react'
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
-const AuthorDetails = async () => {
+const AuthorDetails = async ({locale}: {locale: string}) => {
     const author: Author = await client.fetch(`*[_type == "author"][0]{
         _id,
         name,
