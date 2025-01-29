@@ -7,7 +7,7 @@ import CtaButton from '../shared/CtaButton'
 import { getTranslations } from 'next-intl/server'
 import SocialMediaLinks from '../shared/SocialMediaLinks'
 
-const Footer = async () => {
+const Footer = async ({locale}: {locale: string}) => {
     const t = await getTranslations("Navigation");
     return (
         <footer className='sections_container !my-10'>
@@ -30,7 +30,7 @@ const Footer = async () => {
                             {
                                 navList.map((nav, index) => {
                                     return (
-                                        <Link key={index} href={nav.path}
+                                        <Link key={index} href={`/${locale}${nav.path}`}
                                             className={cn('hover:text-primary transition duration-300 font-light text-base'
                                             )}
                                         >
