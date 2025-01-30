@@ -41,7 +41,7 @@ const SubscribeEmail = () => {
                                     {...field}
                                     type="email"
                                     placeholder="Enter your Email***"
-                                    className={cn('rounded-[50px] font-bold text-base font-helvetica text-primary placeholder:text-text-secodnary border-2 border-secondary') }
+                                    className={cn('rounded-[50px] font-bold text-base font-helvetica bg-primary text-secondary placeholder:text-secondary border-2 border-secondary') }
                                     disabled={isPending}
                                 />
                             </FormControl>
@@ -49,7 +49,7 @@ const SubscribeEmail = () => {
                         </FormItem>
                     )}
                 />
-                <Button className={cn('rounded-[50px] font-bold text-base font-helvetica text-center bg-secondary text-primary hover:bg-secondary/80')} size={"lg"} type={"submit"} disabled={isPending}>
+                <Button className={cn('rounded-[50px] font-bold text-base font-helvetica text-center bg-primary text-secondary')} size={"lg"} type={"submit"} disabled={isPending}>
                     Subscribe Letter
                 </Button>
             </form>

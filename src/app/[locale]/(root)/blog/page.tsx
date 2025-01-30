@@ -7,7 +7,7 @@ const BlogPage = async ({params}: {params: {locale: string}}) => {
     const locale = (await (params)).locale
     return (
         <main>
-            <BlogHero />
+            <BlogHero locale={locale} />
             <Suspense fallback={<div>Loading...</div>}>
                 <Blogs locale={locale} />
             </Suspense>

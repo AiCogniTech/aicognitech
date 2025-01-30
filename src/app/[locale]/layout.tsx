@@ -14,9 +14,9 @@ export const metadata: Metadata = {
 };
 
 
- 
+
 export function generateStaticParams() {
-  return routing.locales.map((locale) => ({locale}));
+  return routing.locales.map((locale) => ({ locale }));
 }
 
 export default async function RootLayout({
@@ -39,9 +39,7 @@ export default async function RootLayout({
         className={`antialiased bg-secondary text-text`}
       >
         <NextIntlClientProvider messages={messages}>
-          <Header locale={locale} />
           {children}
-          <Footer locale={locale} />
           <Analytics />
         </NextIntlClientProvider>
       </body>

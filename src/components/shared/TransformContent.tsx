@@ -1,6 +1,7 @@
 import React from 'react'
 import CtaButton from './CtaButton'
 import { getTranslations } from 'next-intl/server';
+import SubscribeEmail from './SubscribeEmail';
 
 const TransformContent = async () => {
     const t = await getTranslations("Blog.TransformContent");
@@ -12,7 +13,7 @@ const TransformContent = async () => {
                     <h4 className='text-lg md:text-xl lg:text-2xl font-bold'>
                         {t("h4")}
                     </h4>
-                    <CtaButton text='/contact-us' />
+                    <SubscribeEmail />
                 </div>
                 <div className='flex-1'>
                     <p className='text-base md:text-lg font-light'>

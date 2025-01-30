@@ -12,6 +12,38 @@ export const fetchCategories = async () => {
   return fetchedCategories
 }
 
+export const randomBlog = async () => {
+  const total = await client.fetch("count(*[_type == 'doc'])")
+
+  const randomIndex = Math.floor(Math.random() * (total + 1))
+  const data = await client.fetch(`
+                      *[_type == "post"]{
+              _id,
+              title,
+              "slug": slug.current,
+              publishedAt,
+              body,
+              author->{
+                _id,
+                name,
+                destination,
+                "socials": socials[]{platform, url},
+                bio,
+                "slug": slug.current,
+                "image_url": image.asset->url
+              },
+              categories[]->{
+                title,
+                slug,
+                description,
+                _id
+              },
+              "imageSrc": mainImage.asset->url
+            } [$randomIndex]
+            `, { randomIndex });
+  return data
+}
+
 export const fetchBlogs = async ({ categorySlug }: { categorySlug: string | null }) => {
   const data = await client.fetch(`
               *[_type == "post" && (!defined($categorySlug) || references(*[_type == "category" && slug.current == $categorySlug]._id))]{
