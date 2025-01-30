@@ -156,12 +156,8 @@
     "techButton": "La technologie"
   },
   "Blog": {
-    "hero": {
-      "h1": "Newsletter - Gardez une longueur d'avance : rejoignez AiCogniTech",
-      "p": "Obtenez un accès exclusif aux stratégies d'IA de pointe, aux informations d'experts et aux coulisses des avancées de FEMTech, AgeTech, HealthTech et Longevity. Abonnez-vous maintenant pour recevoir des conseils personnalisés et des tendances sectorielles directement dans votre boîte de réception, de la part de Cebuan et de l'équipe AICogniTech."
-    },
     "TransformContent": {
-      "h4": "Améliorez votre marque grâce au contenu et à l'automatisation basés sur l'IA",
+      "h4": "Newsletter - Gardez une longueur d'avance : rejoignez AiCogniTech",
       "p": "Chez AiCogniTech, nous créons du contenu personnalisé basé sur l'IA pour les secteurs FEMTech, AgeTech, HealthTech et Longevity. Améliorez votre présence sur les réseaux sociaux avec des publications engageantes et spécifiques à l'industrie qui trouvent un écho auprès de votre public. Notre IA et notre automatisation des données rationalisent la création de contenu, la planification et le suivi des performances, gardant votre marque impactante et pertinente. Prêt à élever votre stratégie numérique"
     }
   },

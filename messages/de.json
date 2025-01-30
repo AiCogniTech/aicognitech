@@ -156,12 +156,8 @@
         "techButton": "Die Technologie"
     },
     "Blog": {
-        "hero": {
-            "h1": "Newsletter - Bleiben Sie auf dem Laufenden: Werden Sie Mitglied bei AiCogniTech",
-            "p": "Erhalten Sie exklusiven Zugang zu branchenführenden KI-Strategien, Expertenwissen und Einblicken hinter die Kulissen zu Fortschritten in den Bereichen FEMTech, AgeTech, HealthTech und Langlebigkeit. Abonnieren Sie jetzt, um maßgeschneiderte Tipps und branchenspezifische Trends von Cebuan und dem AICogniTech-Team direkt in Ihren Posteingang zu erhalten."
-        },
         "TransformContent": {
-            "h4": "Stärken Sie Ihre Marke mit KI-gestützten Inhalten und Automatisierung",
+            "h4": "Newsletter - Bleiben Sie auf dem Laufenden: Werden Sie Mitglied bei AiCogniTech",
             "p": "Bei AiCogniTech erstellen wir maßgeschneiderte KI-gesteuerte Inhalte für die Sektoren FEMTech, AgeTech, HealthTech und Longevity. Verbessern Sie Ihre Social-Media-Präsenz mit ansprechenden, branchenspezifischen Beiträgen, die bei Ihrem Publikum Anklang finden. Unsere KI- und Datenautomatisierung rationalisiert die Inhaltserstellung, -planung und Leistungsverfolgung und sorgt dafür, dass Ihre Marke wirkungsvoll und relevant bleibt. Bereit, Ihre digitale Strategie zu verbessern"
         }
     },
