@@ -7,6 +7,7 @@ import { Locale, routing } from "@/i18n/routing";
 import Header from "@/components/navigation/Header";
 import Footer from "@/components/navigation/Footer";
 import { Analytics } from '@vercel/analytics/next';
+import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
   title: "AiCogniTech - AI Chatbots, Automation & Multilingual Solutions for Health Businesses",
@@ -40,6 +41,7 @@ export default async function RootLayout({
       >
         <NextIntlClientProvider messages={messages}>
           {children}
+          <Toaster />
           <Analytics />
         </NextIntlClientProvider>
       </body>
