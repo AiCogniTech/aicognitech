@@ -1,13 +1,14 @@
+// "use client"
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import "./globals.css";
 import { Locale, routing } from "@/i18n/routing";
-import Header from "@/components/navigation/Header";
-import Footer from "@/components/navigation/Footer";
 import { Analytics } from '@vercel/analytics/next';
 import { Toaster } from "@/components/ui/toaster";
+import Header from "@/components/navigation/Header";
+import Footer from "@/components/navigation/Footer";
 
 export const metadata: Metadata = {
   title: "AiCogniTech - AI Chatbots, Automation & Multilingual Solutions for Health Businesses",
@@ -40,9 +41,12 @@ export default async function RootLayout({
         className={`antialiased bg-secondary text-text`}
       >
         <NextIntlClientProvider messages={messages}>
+
+          <Header locale={locale} />
           {children}
           <Toaster />
           <Analytics />
+          <Footer locale={locale} />
         </NextIntlClientProvider>
       </body>
     </html>
