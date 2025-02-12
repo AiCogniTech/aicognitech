@@ -17,7 +17,7 @@ const RootLayout = ({ children }: Readonly<{
             {children}
             <FloatingWhatsApp phoneNumber="+41774651146" accountName="AiCogniTech" 
             chatMessage="Reach out - we'll get back to you in no time!
-            \nReach out - we'll get back to you in no time!" darkMode={true}
+            \nReach out - we'll get back to you in no time!" darkMode={true} statusMessage="Let us Unlock"
             />
         </main>
     )
