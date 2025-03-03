@@ -100,7 +100,7 @@ export const fetchBlogDetails = async (slug: string, language: string) => {
       description,
       _id
     },
-    "imageSrc": mainImage.asset->url
+    "imageSrc": mainImage.asset->url 
   }`;
 
   const data = await client.fetch(query, { slug, language });
