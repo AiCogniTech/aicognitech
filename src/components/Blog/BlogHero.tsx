@@ -8,7 +8,7 @@ import { cn } from '@/lib/utils';
 import Link from 'next/link';
 
 const BlogHero = async ({ locale }: { locale: string }) => {
-    const randomBlogs: Post = await randomBlog();
+    const randomBlogs: Post = await randomBlog(locale);
     // console.log(randomBlogs)
     const components = {
         types: {

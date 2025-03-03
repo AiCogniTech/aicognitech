@@ -18,7 +18,7 @@ const AllBlogs = ({locale}: {locale: string}) => {
       const fetchBlogPosts = async () => {
         try {
   
-          const data: Post[] = await fetchBlogs({ categorySlug });
+          const data: Post[] = await fetchBlogs({ categorySlug, language: locale });
   
           if (data?.length) {
             setBlogPosts(data);
