@@ -7,14 +7,14 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react'
 
-const LatestBlogs = ({categorySlug}: {categorySlug: string | null}) => {
+const LatestBlogs = ({categorySlug, language}: {categorySlug: string | null, language: string}) => {
         const [blogPosts, setBlogPosts] = useState<Post[]>([]);
       
         useEffect(() => {
           const fetchBlogPosts = async () => {
             try {
       
-              const data: Post[] = await fetchBlogs({ categorySlug });
+              const data: Post[] = await fetchBlogs({ categorySlug, language });
       
               if (data?.length) {
                 setBlogPosts(data);

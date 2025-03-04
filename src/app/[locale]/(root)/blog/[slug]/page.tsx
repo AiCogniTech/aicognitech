@@ -1,9 +1,5 @@
-import ClientSpecificBlogDetails from '@/components/blog/ClientSpecificBlogDetails'
-import LatestBlogs from '@/components/blog/LatestBlogs'
-import SpecificBlogDetails from '@/components/blog/SpecificBlogDetails'
-import SpeicficBlogHero from '@/components/blog/SpeicficBlogHero'
-import { fetchBlogDetails } from '@/lib/actions/blogs.actions'
-import React from 'react'
+import ClientSpecificBlogDetails from "@/components/blog/ClientSpecificBlogDetails";
+import { fetchAllBlogSlugsFromSanity, fetchBlogDetailsFromSanity } from "@/lib/actions/blogs.actions";
 
 interface Iparams {
     params: Promise<{
@@ -12,29 +8,32 @@ interface Iparams {
     }>
 }
 
+export async function generateMetadata({ params }: Iparams) {
+    const {slug,locale} = await params
+    const blog = await fetchBlogDetailsFromSanity(slug);
+    return {
+      title: blog.title,
+      description: blog.description,
+      openGraph: {
+        title: blog.title,
+        description: blog.description,
+        url: `https://www.aicognitech.com/${locale}/blog/${slug}}`,
+      },
+    };
+  }
 
 const SpecificBlogPage = async ({ params }: Iparams) => {
-    const {locale, slug} = (await (params));
-
-    // const data: Post[] = await fetchBlogDetails(locale);
-    //  // Filter the specific blog post by slug
-    //  const blogDetails = data.map((post) => post.slug === slug);
-
-    // //  // If no blog post is found, return a 404 message
-    // //  if (!blogDetails) {
-    // //      return <main><h1>Blog not found for this language</h1></main>;
-    // //  }
-    // console.log(blogDetails);
+    const { locale, slug } = await params;
+    // console.log("Page params:", { locale, slug });
     return (
-        // <main>
-        //     {locale}
-        //     {data[0].title}
-        //     {/* <SpeicficBlogHero blog={blogDetails} />
-        //     <SpecificBlogDetails blog={blogDetails} />
-        //     <LatestBlogs categorySlug={null} /> */}
-        // </main>
         <ClientSpecificBlogDetails locale={locale} slug={slug} />
-    )
+    );
 }
 
-export default SpecificBlogPage
+export default SpecificBlogPage;
+
+
+export async function generateStaticParams() {
+    const slugs = await fetchAllBlogSlugsFromSanity();
+    return slugs.map((slug) => ({ slug }));
+}

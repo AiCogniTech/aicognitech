@@ -76,60 +76,110 @@ export const fetchBlogs = async ({ categorySlug, language }: { categorySlug: str
 }
 
 export const fetchBlogDetails = async (selectedLanguage: string) => {
-  const language = selectedLanguage || "en"; // Default to English if undefined
-
-  const query = `*[_type == "post" && (!defined($language) || language == $language)]{
-    _id,
-    title,
-    "slug": slug.current,
-    publishedAt,
-    body,
-    language,
-    author->{
-      _id,
-      name,
-      destination,
-      "socials": socials[]{platform, url},
-      bio,
-      "slug": slug.current,
-      "image_url": image.asset->url
-    },
-    categories[]->{
-      title,
-      "slug": slug.current,
-      description,
-      _id
-    },
-    "imageSrc": mainImage.asset->url ,
-     "_translations": *[_type == "translation.metadata" && references(^._id)].translations[].value->{
-   _id,
-    title,
-    "slug": slug.current,
-    publishedAt,
-    body,
-    language,
-    author->{
-      _id,
-      name,
-      destination,
-      "socials": socials[]{platform, url},
-      bio,
-      "slug": slug.current,
-      "image_url": image.asset->url
-    },
-    categories[]->{
-      title,
-      "slug": slug.current,
-      description,
-      _id
-    },
-  "imageSrc": mainImage.asset->url ,
-    language
-  },
+  if (!selectedLanguage) {
+    console.warn("No language provided to fetchBlogDetails – defaulting to en");
   }
-  }`;
+  const language = selectedLanguage as string;
 
-  const data = await client.fetch(query, { language: language });
+  const query = `
+    *[_type == "post" && (!defined($language) || language == $language)]{
+      _id,
+      title,
+      "slug": slug.current,
+      publishedAt,
+      body,
+      language,
+      author->{
+        _id,
+        name,
+        destination,
+        "socials": socials[]{platform, url},
+        bio,
+        "slug": slug.current,
+        "image_url": image.asset->url
+      },
+      categories[]->{
+        title,
+        "slug": slug.current,
+        description,
+        _id
+      },
+      "imageSrc": mainImage.asset->url,
+      "_translations": *[
+        _type == "translation.metadata" && references(^._id)
+      ].translations[].value->{
+        _id,
+        title,
+        "slug": slug.current,
+        publishedAt,
+        body,
+        language,
+        author->{
+          _id,
+          name,
+          destination,
+          "socials": socials[]{platform, url},
+          bio,
+          "slug": slug.current,
+          "image_url": image.asset->url
+        },
+        categories[]->{
+          title,
+          "slug": slug.current,
+          description,
+          _id
+        },
+        "imageSrc": mainImage.asset->url,
+        language
+      }
+    }
+  `;
 
+  const data = await client.fetch(query, { language });
   return data;
+};
+
+export const fetchAllBlogSlugsFromSanity = async () => {
+  // Query only the slug field (using alias "slug")
+  const query = `
+    *[_type == "post"]{
+      "slug": slug.current
+    }
+  `;
+  const results: Slugs[] = await client.fetch(query);
+  // Map over the results to return an array of slugs.
+  return results.map((doc) => doc.slug);
+};
+
+
+export const fetchBlogDetailsFromSanity = async (slug: string) => {
+  const query = `
+*[_type == "post" && slug.current == $slug][0]{
+      _id,
+      title,
+      "slug": slug.current,
+      publishedAt,
+     description,
+      body,
+      language,
+      author->{
+        _id,
+        name,
+        destination,
+        "socials": socials[]{platform, url},
+        bio,
+        "slug": slug.current,
+        "image_url": image.asset->url
+      },
+      categories[]->{
+        title,
+        "slug": slug.current,
+        description,
+        _id
+      },
+      "imageSrc": mainImage.asset->url
+    }
+  `;
+  const blog: Post = await client.fetch(query, { slug });
+  return blog;
 };

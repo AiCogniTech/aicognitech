@@ -37,10 +37,15 @@ interface Post {
   title: string;
   slug: string;
   publishedAt: string;
+  description: string;
   body: any;
   language: string;
   author: Author; // Nested Author object
   categories: Category[]; // Array of Category objects
   imageSrc: string; // URL of the main image
   _translations?: Translation[]; // Optional array of translated versions
+}
+
+interface Slugs {
+  slug: string
 }
