@@ -7,16 +7,17 @@ import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 const AuthorDetails = async ({locale}: {locale: string}) => {
-    const author: Author = await client.fetch(`*[_type == "author"][0]{
-        _id,
-        name,
-        destination,
-        "socials": socials[]{platform, url}, // Select only the 'platform' and 'url' fields
-        bio,    
-        "slug": slug.current,
-        "image_url": image.asset->url,
-        }
-`)
+    const author: Author = await client.fetch(`*[_type == "author" && (!defined($language) || language == $language)][0]{
+                _id,
+                name,
+                destination,
+                "socials": socials[]{platform, url}, // Select only the 'platform' and 'url' fields
+                bio,    
+                "slug": slug.current,
+                "image_url": image.asset->url,
+                language
+                }`, {language: locale}
+            )
     // console.log(author)
     return (
         <section className="flex flex-col gap-5 font-helvetica">

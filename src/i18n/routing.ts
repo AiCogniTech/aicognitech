@@ -15,6 +15,13 @@ export const routing = defineRouting({
       it: "/contattaci",
       es: "/contacta-con-nosotras"
     },
+    "/blog/[slug]": {
+      en: "/blog/[slug]",
+      fr: "/blogue/[slug]",
+      de: "/blog/[slug]",
+      it: "/blog/[slug]",
+      es: "/blog/[slug]"
+    }
   },
 });
 
