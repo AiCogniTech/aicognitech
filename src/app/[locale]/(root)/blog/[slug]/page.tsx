@@ -1,4 +1,4 @@
-import ClientSpecificBlogDetails from "@/components/blog/ClientSpecificBlogDetails";
+import ClientSpecificBlogDetails from "@/components/blogs/ClientSpecificBlogDetails";
 import { fetchAllBlogSlugsFromSanity, fetchBlogDetailsFromSanity } from "@/lib/actions/blogs.actions";
 
 interface Iparams {
