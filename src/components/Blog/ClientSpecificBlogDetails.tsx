@@ -23,7 +23,7 @@ const ClientSpecificBlogDetails = ({ locale, slug }: { locale: string, slug: str
                         if (translatedPost) {
                             setBlogDetails(translatedPost);
                             router.replace({
-                                pathname: "/blog/[slug]", // This should match your routing config
+                                pathname: "/blog/[slug]", // This should match your routing config 
                                 params: { slug: translatedPost.slug }, // Ensure correct slug is used
                                  
                             },{ locale: locale as Locale });
