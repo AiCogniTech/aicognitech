@@ -100,7 +100,33 @@ export const fetchBlogDetails = async (selectedLanguage: string) => {
       description,
       _id
     },
-    "imageSrc": mainImage.asset->url 
+    "imageSrc": mainImage.asset->url ,
+     "_translations": *[_type == "translation.metadata" && references(^._id)].translations[].value->{
+   _id,
+    title,
+    "slug": slug.current,
+    publishedAt,
+    body,
+    language,
+    author->{
+      _id,
+      name,
+      destination,
+      "socials": socials[]{platform, url},
+      bio,
+      "slug": slug.current,
+      "image_url": image.asset->url
+    },
+    categories[]->{
+      title,
+      "slug": slug.current,
+      description,
+      _id
+    },
+  "imageSrc": mainImage.asset->url ,
+    language
+  },
+  }
   }`;
 
   const data = await client.fetch(query, { language: language });
