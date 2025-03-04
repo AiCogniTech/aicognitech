@@ -1,5 +1,5 @@
-import BlogHero from '@/components/blog/BlogHero'
-import Blogs from '@/components/blog/Blogs'
+import BlogHero from '@/components/blogs/BlogHero'
+import Blogs from '@/components/blogs/Blogs'
 import TransformContent from '@/components/shared/TransformContent'
 import React, { Suspense } from 'react'
 
