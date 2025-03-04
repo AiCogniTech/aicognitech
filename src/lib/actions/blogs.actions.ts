@@ -75,10 +75,10 @@ export const fetchBlogs = async ({ categorySlug, language }: { categorySlug: str
   return data
 }
 
-export const fetchBlogDetails = async (slug: string, language: string) => {
-  // const language = selectedLanguage || "en"; // Default to English if undefined
+export const fetchBlogDetails = async (selectedLanguage: string) => {
+  const language = selectedLanguage || "en"; // Default to English if undefined
 
-  const query = `*[_type == "post" && (!defined($slug) || slug.current == $slug) && (!defined($language) || language == $language)][0]{
+  const query = `*[_type == "post" && (!defined($language) || language == $language)]{
     _id,
     title,
     "slug": slug.current,
@@ -103,7 +103,7 @@ export const fetchBlogDetails = async (slug: string, language: string) => {
     "imageSrc": mainImage.asset->url 
   }`;
 
-  const data = await client.fetch(query, { slug, language });
+  const data = await client.fetch(query, { language: language });
 
   return data;
 };
